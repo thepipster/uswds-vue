@@ -1,0 +1,58 @@
+// USWDS has an excellent color system, check it out here for a deeper dive
+// @see https://designsystem.digital.gov/utilities/color/
+@import "./a11y-color.scss";
+
+$theme-colors: (
+  primary: #2c608a, // 'blue-60'
+  secondary: #757575, // 'gray-50'
+  accent: #ffbc78, // 'orange-20v'
+  success: #719f2a, // 'green-40v' 
+  warning: #e5a000, // 'gold-30v'
+  info: #8bd3df, // 'cyan-30v',
+  danger: #d54309, // 'red-warm-50v'
+  dark: #1b1b1b, // 'gray-90',
+  light: #c9c9c9, // 'gray-20',
+  muted: #adadad, // 'gray-30',
+  white: #fcfcfc, // 'gray-1',
+  black: #000000
+) !default;
+
+$border-darken: 10% !default;
+$bg-lighten: 15% !default;
+
+
+// Setup utiliy classes that uses these
+@each $variant, $token in $theme-colors {
+
+    $color: map-get($theme-colors, $variant);
+    $colorLight: lighten( $color, $bg-lighten );
+    $colorDark: lighten( $color, $border-darken );
+                
+    .text-#{$variant} {
+        color: $color !important;
+    }
+
+    .text-#{$variant}-contrast {
+      // color: a11y-color($foreColor, $color) !important;
+      color: color-contrast($color) !important;     
+    }  
+
+    .bg-#{$variant} {
+        background-color: $colorLight !important;
+        color: color-contrast($color) !important; // choose-contrast-color($colorLight) 
+    }
+
+    .border-#{$variant} {
+        border-style: solid;
+        border-color:$color !important;
+    }    
+
+    .text-outline-#{$variant} {
+      color: $color !important;
+    }
+
+    .border-outline-#{$variant} {
+      border-style: solid;
+      border-color: $color !important;
+    }      
+}

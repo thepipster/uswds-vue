@@ -1,0 +1,70 @@
+
+// Pull in uswds defaults
+//@import "./uswds/settings/settings-color";
+
+@import "~uswds/dist/css/uswds.css";
+
+//@import "./core.scss";
+//@import "./usx-component.scss";
+//`@import "./variables.scss";
+//@import "./mixins.scss";
+//@import "./functions.scss";
+//@import "./colors.scss";
+@import "./default-theme.scss";
+@import "./a11y-color.scss";
+
+// TODO: bring into project.. but only used icons?
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+// Then import Bootstrap, starting to standardize components around bootstrap
+@import "~bootstrap/scss/bootstrap.scss";
+
+// Any overrides of bootstrap or uswds that wasn't caught by sass
+@import "./utilities.scss";
+
+
+$border-darken: 10% !default;
+$bg-lighten: 15% !default;
+
+
+// Setup utiliy classes that uses these
+@each $variant, $token in $theme-colors {
+
+    $color: map-get($theme-colors, $variant);
+    $colorLight: lighten( $color, $bg-lighten );
+    $colorDark: lighten( $color, $border-darken );
+                
+    .text-#{$variant} {
+        color: $color !important;
+    }
+
+    .text-#{$variant}-contrast {
+      // color: a11y-color($foreColor, $color) !important;
+      color: color-contrast($color) !important;     
+    }  
+
+    .bg-#{$variant} {
+        background-color: $color !important;
+        color: color-contrast($color) !important; // choose-contrast-color($colorLight) 
+    }
+
+    .border-#{$variant} {
+        border-style: solid;
+        border-color:$color !important;
+    }    
+
+    .text-outline-#{$variant} {
+      color: $color !important;
+    }
+
+    .border-outline-#{$variant} {
+      border-style: solid;
+      border-color: $color !important;
+    }      
+}
+
+.btn {
+    &.btn-link {
+        text-decoration: underline;
+    }
+}
