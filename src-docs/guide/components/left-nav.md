@@ -1,7 +1,11 @@
 # Side Navigation
 
 <div class="w-50 mt-3 mb-3 usx-component">
-    <us-side-nav :links="menu"/>
+    <us-row>
+        <us-col>
+            <us-side-nav :links="menu"/>
+        </us-col>
+    </us-row>
 </div>
 
 

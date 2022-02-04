@@ -55,11 +55,7 @@ module.exports = {
       {
         text: 'Guide',
         link: '/guide/',
-      },
-      {
-        text: 'US Digital',
-        link: 'https://usds.gov/'
-      },      
+      },    
       {
         text: 'USWDS',
         link: 'https://designsystem.digital.gov/'
@@ -70,7 +66,7 @@ module.exports = {
       //},
       {
         text: 'View on Github',
-        link: 'https://github.com/usds/uswds-vue'
+        link: 'https://github.com/thepipster/uswds-vue'
       }
     ],
     sidebar: {

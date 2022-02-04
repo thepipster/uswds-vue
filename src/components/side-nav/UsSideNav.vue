@@ -1,6 +1,6 @@
 <template>
 
-    <ul class="usx-component nav flex-column">
+    <ul class="usx-component usx-sidenav nav flex-column" align="left">
         
         <li v-for="(link, index) in links" :key="index" class="nav-item">
 
@@ -133,5 +133,6 @@ export default {
 };
 </script>
 <style lang="scss">
-
+.usx-sidenav {
+}
 </style>

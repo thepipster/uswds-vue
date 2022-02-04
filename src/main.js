@@ -1,5 +1,5 @@
 import Logger from './utils/Logger';
-import 'bootstrap';
+import VueRouter from 'vue-router';
 
 import UsAlert from './components/UsAlert';
 import UsAccordion from './components/accordion/UsAccordion.vue';
@@ -101,6 +101,7 @@ const UswdsVue = {
     install(Vue, config = {}) {
 
         Vue.use(Logger);
+        Vue.use(VueRouter);
 
         Object.keys(Components).forEach((name) => {
             Vue.component(name, Components[name]);
