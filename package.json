@@ -1,6 +1,6 @@
 {
   "name": "uswds-vue",
-  "version": "0.1.43",
+  "version": "0.1.44",
   "private": false,
   "description": "Vue USWDS component library",
   "scripts": {
