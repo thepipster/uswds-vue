@@ -1,6 +1,6 @@
 <template>
 
-    <ul class="usx-component usx-sidenav nav flex-column" align="left">
+    <ul class="usx-component usx-sidenav nav flex-column">
         
         <li v-for="(link, index) in links" :key="index" class="nav-item">
 
@@ -133,6 +133,78 @@ export default {
 };
 </script>
 <style lang="scss">
+
 .usx-sidenav {
+
+    list-style-type: none;
+    
+    ul.nav-item {
+        padding-left: 0px;
+    }
+
+    .usx-sidenav-item.nav-link {
+
+        border: none;
+        border-top: 1px solid #e6e6e6;
+        margin-bottom: 0;
+        color: #5c5c5c;
+        font-weight: normal;
+        line-height: 1.3em;
+
+        &.depth-2 {
+            padding-left: 2em !important;
+        }
+
+        &.depth-3 {
+            padding-left: 3em !important;
+        }
+
+        .fa-fw {
+            margin-right: 8px;
+        }
+
+        &:hover {
+            background-color: #eee;               
+            text-decoration: none !important;
+        }
+
+        &.active {
+            color: #005ea2;
+            font-weight: 700;
+        }
+
+        &.usx-sidenav-top {
+
+            &.active {
+
+                &::before {                
+                    display: block;
+                    content: "";
+                    background-color: #005ea2;
+                    width: 3px;
+                    height: 1.8em;
+                    position: absolute;
+                    transform: translate(-1em, -0.3em);           
+                }
+            }
+
+        }
+
+        &:hover {
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+            
+        &:focus {
+            outline: none;
+            outline-offset: 0;
+        }
+
+        &.active {
+            background-color: unset;
+        }
+                
+    }
 }
+
 </style>

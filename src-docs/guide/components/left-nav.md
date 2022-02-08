@@ -1,5 +1,23 @@
 # Side Navigation
 
+Example of a simple menu
+
+<div class="w-50 mt-3 mb-3 usx-component">
+    <us-row>
+        <us-col>
+            <us-side-nav :links="[
+                {name: 'Page 1'},
+                {name: 'Page 2'},
+                {name: 'Page 3'},
+                {name: 'Page 4'},
+                {name: 'Page 5'},
+            ]"/>
+        </us-col>
+    </us-row>
+</div>
+
+Example of a menu 3 levels deep.
+
 <div class="w-50 mt-3 mb-3 usx-component">
     <us-row>
         <us-col>

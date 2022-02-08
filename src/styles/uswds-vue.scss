@@ -26,6 +26,12 @@
 $border-darken: 10% !default;
 $bg-lighten: 15% !default;
 
+html, body {
+  //text-rendering: optimizeLegibility;
+  //font-feature-settings: "kern" 1;
+  //font-kerning: normal;  
+  // font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
 
 // Setup utiliy classes that uses these
 @each $variant, $token in $theme-colors {
