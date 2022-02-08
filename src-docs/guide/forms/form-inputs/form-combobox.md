@@ -1,12 +1,14 @@
-# Combo box (dropdown)
+# Select (dropdown)
+
+In USWDS this is called the combo-box, but is more widely known as a `select` component. The Component is also aliased to `<us-form-select>` for backwards compatability.
 
 ## Basic Usage 
 
 <div class="mt-3 mb-3">
     <us-form-group label="Select any historical figure">
-        <us-form-combobox
+        <us-form-select
             name="select historical figure"
-            :options="options2"
+            :options="['Sojourner Truth', 'Frederick Douglass', 'Booker T. Washington', 'George Washington Carver']"
             v-model="checkedValues"
         />
     </us-form-group>
@@ -15,7 +17,7 @@
 
 ```vue
 <us-form-group label="Select any historical figure">
-    <us-form-combobox
+    <us-form-select
         name="select historical figure"
         :options="['Sojourner Truth', 'Frederick Douglass', 'Booker T. Washington', 'George Washington Carver']"
         v-model="checkedValues"
@@ -30,7 +32,7 @@ You can specify the key field and label fields using the `key-field` and `label-
 <div class="mt-3 mb-3">
     <us-form @submit="onSubmit()" :validate="true" v-slot="{isValid, isDirty}">
         <us-form-group label="Select any historical figure">
-            <us-form-combobox
+            <us-form-select
                 name="select historical figure"
                 key-field="id"
                 label-field="name"
@@ -50,7 +52,7 @@ You can specify the key field and label fields using the `key-field` and `label-
 ```vue
 <us-form @submit="onSubmit()" :validate="true" v-slot="{isValid, isDirty}">
     <us-form-group label="Select any historical figure">
-        <us-form-combobox
+        <us-form-select
             name="select historical figure"
             key-field="id"
             label-field="name"
@@ -74,7 +76,7 @@ You can make use of built-in validation, for example;
 <div class="mt-3 mb-3">
     <us-form @submit="onSubmit()" :validate="true" v-slot="{isValid, isDirty}">
         <us-form-group label="Select any historical figure">
-            <us-form-combobox
+            <us-form-select
                 name="select historical figure"
                 :options="options"
                 v-model="checkedValues2"
@@ -93,12 +95,12 @@ You can make use of built-in validation, for example;
 ```vue
 <us-form @submit="onSubmit()" :validate="true" v-slot="{isValid, isDirty}">
     <us-form-group label="Select any historical figure">
-        <us-form-combobox
+        <us-form-select
             name="select historical figure"
             :options="options"
             :rules="{required:true}"
             v-model="checkedValues">
-        </us-form-combobox>
+        </us-form-select>
     </us-form-group>
     <us-button type="submit" variant="primary">Submit</us-button>
     <us-tag variant="danger" v-if="isValid === false">Invalid</us-tag>

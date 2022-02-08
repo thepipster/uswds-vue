@@ -21,7 +21,7 @@
 
 <script>
 import {TheMask} from 'vue-the-mask'
-import FormInputMixins from "../mixins/FormInputMixin";
+import FormInputMixins from "./FormInputMixin";
 
 export default {
     name: 'us-form-input-masked',

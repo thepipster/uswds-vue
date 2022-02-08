@@ -82,8 +82,8 @@
 </template>
 
 <script>
-import FormInputMixins from '../mixins/FormInputMixin';
 import {debounce, findIndex, isArray, isObject} from 'lodash';
+import FormInputMixins from "./FormInputMixin";
 
 export default {
     name: 'us-form-combobox',
@@ -114,6 +114,7 @@ export default {
     data(){
         return {
             isOpen: false,
+            // This is the text being displayed in the input field 
             currentValueLabel: null,
             filteredOpts: null,
             isUpdatingLabel: false
@@ -121,6 +122,7 @@ export default {
     },
     watch:{
         currentValueLabel(){
+            // The user has changed the input field contents
             if (!this.isUpdatingLabel){
                 this.__debouncedOnChange();
             }
@@ -140,6 +142,13 @@ export default {
     },
     methods: {
 
+        __getGuid() {
+            var S4 = function () {
+                return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+            };
+            return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+        },
+
         __setup(){
             
             if (!this.options || !this.value){
@@ -150,18 +159,22 @@ export default {
             // Find the selected item in the array
             let index = -1;
 
-            //console.log('isArray(this.options) = ', isArray(this.options));
+            console.log('isArray(this.options) = ', isArray(this.options));
 
             if (isArray(this.options)){
 
                 // Try to match on the whole object
+                /*
                 for (let i=0; i<this.options.length; i+=1){
                     if (this.value == this.options[i]){
                         index = i;
                     }
                 }
-                /*
+                */
+
                 console.log(`labelField = ${this.labelField}, keyField = ${this.keyField}`)
+                
+                
                 for (let i=0; i<this.options.length; i+=1){
                     if (this.keyField){
                         // The value will be the valued of the key field
@@ -186,7 +199,7 @@ export default {
                         }
                     }
                 }
-                */
+                
             }
 
             if (index != -1){

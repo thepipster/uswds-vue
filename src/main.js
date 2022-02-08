@@ -66,6 +66,7 @@ export const Components = {
     UsFormTextarea,
     UsFormGroup,
     UsFormCombobox,
+    'UsFormSelect': UsFormCombobox,
     UsFormCheckbox,
     UsFormRadio,
     UsFormDate,

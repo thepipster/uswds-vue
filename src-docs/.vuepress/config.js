@@ -101,8 +101,6 @@ module.exports = {
             'components/card',
             //'components/footer',
             //'components/header',
-            'components/gov-banner',
-            'components/left-nav',
             'components/lists',
             'components/modal',
             'components/progress',
@@ -132,7 +130,16 @@ module.exports = {
             'forms/form-inputs/form-time',
             'forms/form-inputs/form-boolean'
           ]
-        }
+        },
+        {
+          title: 'Patterns',
+          collapsable: false,
+          children: [
+            'patterns/gov-banner',
+            'patterns/left-nav',
+            'patterns/banner'
+          ]
+        },           
       ],
     }
   },

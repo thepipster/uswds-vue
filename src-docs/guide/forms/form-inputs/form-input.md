@@ -1,4 +1,4 @@
-# Form Input
+# Text Input
 
 ## Basic Usage 
 

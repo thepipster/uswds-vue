@@ -20,7 +20,7 @@
     </span>
 </template>
 <script>
-import FormInputMixins from "../mixins/FormInputMixin";
+import FormInputMixins from "./FormInputMixin";
 export default {
     name: 'us-form-radio',
     mixins: [FormInputMixins],
