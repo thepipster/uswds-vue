@@ -38,7 +38,6 @@
 </template>
 
 <script>
-import Vue from 'vue';
  import { Modal } from 'bootstrap';
 
 export default {

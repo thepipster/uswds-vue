@@ -4,7 +4,8 @@
         class="usa-input"
         :name="name"
         :mask="mask" 
-        :masked="false"         
+        :masked="false"     
+        :tokens="tokens"    
         :id="divId"
         v-model="currentValue"
         :type="type"
@@ -37,6 +38,19 @@ export default {
         mask: {
             type: String,
             default: null
+        },
+        tokens: {
+            type: Object,
+            default() {
+                return {
+                    '#': { pattern: /\d/ },
+                    X: { pattern: /[0-9a-zA-Z]/ },
+                    S: { pattern: /[a-zA-Z]/ },
+                    A: { pattern: /[a-zA-Z]/, transform: v => v.toLocaleUpperCase() },
+                    a: { pattern: /[a-zA-Z]/, transform: v => v.toLocaleLowerCase() },
+                    '!': { escape: true }
+                }
+            }
         }
         // value, required, disabled, name, label, placeholder, description, hideLabel
         // provided by the InputMixin

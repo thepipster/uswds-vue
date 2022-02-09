@@ -1,5 +1,7 @@
 # Text Input
 
+Your basic `input` field for single line text input.
+
 ## Basic Usage 
 
 <div class="mt-3 mb-3">
@@ -79,6 +81,29 @@ You can make use of built-in validation, for example;
     <us-tag variant="light" v-else-if="isDirty === false">Prestine</us-tag>
 </us-form>
 ```
+### Properties 
+
+Inherited for all form inputs;
+
+| Property | Type  | Default | Description |
+| -------- | ----- | ------- | ----------- | 
+| v-model  | string | null | The v-model prop |
+| disabled  | boolean | false | Disable the control |
+| name  | string | null | The input name |
+| placeholder  | string | null | The input name |
+| debounce  | boolean | false | Set to true to debounce input (to wait for a user to stop typing) |
+| description  | string | null | The input description |
+| rules  | object | null | Validation rules (see form validation docs) |
+| valid  | boolean | null | Allows you to manually control validation state |
+| validation-mode  | string | 'aggressive' | Validation mode, see validation docs for details. |
+| supress-error  | boolean | false | Allow you to turn of the error string being displayed by validation |
+
+Additonal properties specific to this component;
+
+| Property | Type  | Default | Description |
+| -------- | ----- | ------- | ----------- | 
+| type  | string | 'text'' | The input type |
+
 
 <script>
 export default {

@@ -1,5 +1,6 @@
 import Logger from './utils/Logger';
 import VueRouter from 'vue-router';
+import 'bootstrap';
 
 import UsAlert from './components/UsAlert';
 import UsAccordion from './components/accordion/UsAccordion.vue';
@@ -123,4 +124,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 // Export utils
 import Validator from './utils/Validator';
 export {Validator}
+
 

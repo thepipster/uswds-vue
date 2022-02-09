@@ -142,13 +142,6 @@ export default {
     },
     methods: {
 
-        __getGuid() {
-            var S4 = function () {
-                return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
-            };
-            return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
-        },
-
         __setup(){
             
             if (!this.options || !this.value){
@@ -159,26 +152,16 @@ export default {
             // Find the selected item in the array
             let index = -1;
 
-            console.log('isArray(this.options) = ', isArray(this.options));
+            //console.log('isArray(this.options) = ', isArray(this.options));
 
             if (isArray(this.options)){
 
-                // Try to match on the whole object
-                /*
-                for (let i=0; i<this.options.length; i+=1){
-                    if (this.value == this.options[i]){
-                        index = i;
-                    }
-                }
-                */
-
-                console.log(`labelField = ${this.labelField}, keyField = ${this.keyField}`)
-                
+                //console.log(`labelField = ${this.labelField}, keyField = ${this.keyField}`)                
                 
                 for (let i=0; i<this.options.length; i+=1){
                     if (this.keyField){
                         // The value will be the valued of the key field
-                        console.log(`keyField = ${this.keyField}, i = ${i}, val = ${this.value}, this = ${this.options[i][this.keyField]}`)
+                        //console.log(`keyField = ${this.keyField}, i = ${i}, val = ${this.value}, this = ${this.options[i][this.keyField]}`)
                         if (this.value == this.options[i][this.keyField]){
                             index = i;
                         }
@@ -186,7 +169,7 @@ export default {
                     else if (this.labelField){
                         // With no key field, the value will be the entire object. 
                         // So use the label field to match on
-                        console.log(`labelField = ${this.labelField}, i = ${i}, val = ${this.value}, this = ${this.options[i][this.keyField]}`)
+                        //console.log(`labelField = ${this.labelField}, i = ${i}, val = ${this.value}, this = ${this.options[i][this.keyField]}`)
                         if (this.value[this.labelField] == this.options[i][this.labelField]){
                             index = i;
                         }

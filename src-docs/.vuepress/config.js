@@ -116,8 +116,9 @@ module.exports = {
           collapsable: false,
           children: [
             'forms/form',
-            'forms/form-group',
             'utils/validation',
+            'forms/form-inputs/form-input',
+            'forms/form-inputs/masked-input',
             'forms/form-inputs/form-checkbox',
             'forms/form-inputs/form-radio',
             'forms/form-inputs/form-combobox',
@@ -125,7 +126,6 @@ module.exports = {
             'forms/form-inputs/form-date-picker',
             'forms/form-inputs/form-date-range',
             'forms/form-inputs/form-fileinput',
-            'forms/form-inputs/form-input',
             'forms/form-inputs/form-slider',
             'forms/form-inputs/form-time',
             'forms/form-inputs/form-boolean'

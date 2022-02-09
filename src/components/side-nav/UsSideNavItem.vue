@@ -7,7 +7,7 @@
         class="usx-component usx-sidenav-item nav-link" 
         :class="[{'active':active, 'usx-sidenav-top': depth == 1}, `depth-${depth}`]"
         @click="onClick">
-        <i v-if="item.icon2" :class="item.icon" class="fa-fw"></i> {{item.name}}
+        <i v-if="item.icon" :class="item.icon" class="fa-fw"></i> {{item.name}}
     </router-link>
     
     <li v-else 
@@ -15,7 +15,7 @@
         :class="[{'active':active, 'usx-sidenav-top': depth == 1}, `depth-${depth}`]"
         :href="item.href"
         @click="onClick">
-        <i v-if="item.icon2" :class="item.icon" class="fa-fw"></i> {{item.name}}
+        <i v-if="item.icon" :class="item.icon" class="fa-fw"></i> {{item.name}}
     </li>
 
 </template>

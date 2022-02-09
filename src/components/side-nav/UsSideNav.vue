@@ -58,6 +58,10 @@ export default {
     name: 'us-side-nav',
     components: {UsSideNavItem},
     props: {
+        value: {
+            type: Object,
+            default: null
+        },
         links: {
             type: Array,
             default(){
@@ -79,32 +83,60 @@ export default {
     data() {
         return {
             menu: null,
+            isUpdating: false,
             selectedParent: null,
             selectedChild: null,
             selectedGrandChild: null
         }
     },  
-    mounted(){
-        let ct = 0;
-        let newMenu = this.links;
-
-        // Add unique id's into menu to make life easier
-        const addIds = (items) => {
-            for (let i=0; i<items.length; i+=1){
-                items[i]._id = ct;
-                ct += 1;
-                if (items[i].children){
-                    addIds(items[i].children)
-                }
+    watch: {
+        links() {
+            if (!this.isUpdating) { 
+                this.setup();
             }
-        }
-
-        addIds(newMenu);
-        this.menu = newMenu;
-
+        },   
+    },
+    mounted(){
+        this.setup();
     },  
     methods: {
         
+        setup(){
+            this.isUpdating = true;
+
+            let ct = 0;
+            let newMenu = this.links;
+
+            // Add unique id's into menu to make life easier
+            const addIds = (items, depth) => {
+                
+                if (!depth){
+                    depth = 1;
+                }
+
+                for (let i=0; i<items.length; i+=1){
+                    
+                    items[i]._id = ct;
+                    ct += 1;
+                    
+                    if (depth == 1 && items[i].active){
+                        this.onSelectParent(items[i]);
+                    }
+
+                    if (items[i].children){
+                        addIds(items[i].children, depth+=1)
+                    }
+                }
+
+            }
+
+            addIds(newMenu);
+            this.menu = newMenu;
+            this.$nextTick(()=>{
+                this.isUpdating = false;
+            });
+        },
+
         onSelectItem(item){
 
         },
@@ -113,21 +145,21 @@ export default {
             this.selectedParent = parent;
             this.selectedChild = null;
             this.selectedGrandChild = null;
-            this.$emit('click', parent);
+            this.$emit('input', parent);
         },
 
         onSelectChild(parent, child){
             this.selectedParent = parent;
             this.selectedChild = child;
             this.selectedGrandChild = null;
-            this.$emit('click', child);
+            this.$emit('input', child);
         },
 
         onSelectGrandChild(parent, child, grandChild){
             this.selectedParent = parent;
             this.selectedChild = child;
             this.selectedGrandChild = grandChild;
-            this.$emit('click', grandChild);
+            this.$emit('input', grandChild);
         },
     }
 };
@@ -141,6 +173,10 @@ export default {
     ul.nav-item {
         padding-left: 0px;
     }
+    
+    li:last-child {
+        border-bottom: 1px solid #e6e6e6;
+    }
 
     .usx-sidenav-item.nav-link {
 
@@ -150,6 +186,8 @@ export default {
         color: #5c5c5c;
         font-weight: normal;
         line-height: 1.3em;
+
+
 
         &.depth-2 {
             padding-left: 2em !important;
