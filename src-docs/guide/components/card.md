@@ -63,31 +63,35 @@ Add custom html content using the `title`, and  `footer` slots. See the VueJS do
 
 Set the `img-pos` prop to either `top` or `bottom` for vertical image placement.
 
-<div class="mt-3 mb-3">
-    <us-card 
-        title="Card with media" 
-        subTitle="Image Top"
-        class="w-50 mb-3"
-        img-src="/built-to-grow--alt.jpg"
-        img-pos="top"
-    >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
-        <template #footer>
-            <us-button variant="primary" block>Visit Florida Keys</us-button>
-        </template>
-    </us-card> 
-    <us-card 
-        title="Card with media" 
-        subTitle="Image Bottom"
-        class="w-50"
-        img-src="/built-to-grow--alt.jpg"
-        img-pos="bottom"
-    >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
-        <template #footer>
-            <us-button variant="primary" block>Visit Florida Keys</us-button>
-        </template>
-    </us-card>     
+<div class="mt-3 mb-3">    
+    <us-row>
+        <us-col>
+            <us-card 
+                title="Card with media" 
+                subTitle="Image Top"
+                img-src="/built-to-grow--alt.jpg"
+                img-pos="top"
+            >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
+                <template #footer>
+                    <us-button variant="primary" block>Visit Florida Keys</us-button>
+                </template>
+            </us-card>         
+        </us-col>
+        <us-col>
+            <us-card 
+                title="Card with media" 
+                subTitle="Image Bottom"
+                img-src="/built-to-grow--alt.jpg"
+                img-pos="bottom"
+            >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
+                <template #footer>
+                    <us-button variant="primary" block>Visit Florida Keys</us-button>
+                </template>
+            </us-card>           
+        </us-col>
+    </us-row>  
 </div>
 
 ### Horizontal Image Placement
@@ -95,33 +99,37 @@ Set the `img-pos` prop to either `top` or `bottom` for vertical image placement.
 Likewise, set the `img-pos` prop to either `left` or `right` for vertical image placement.
 
 <div class="mt-3 mb-3">
-    <us-card 
-        title="Card with media" 
-        subTitle="Image Left"
-        img-src="/built-to-grow--alt.jpg"
-        class="mb-3 w-50"
-        img-pos="left"
-    >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
-        <template #footer>
-            <us-button variant="primary" block>Visit Florida Keys</us-button>
-        </template>
-    </us-card>     
-    <us-card 
-        title="Card with media" 
-        subTitle="Image Right"
-        img-src="/built-to-grow--alt.jpg"
-        img-pos="right"
-        class="w-50"
-    >
-        <template #header>
-            Flag Card
-        </template>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
-        <template #footer>
-            <us-button variant="primary" block>Visit Florida Keys</us-button>
-        </template>
-    </us-card> 
+    <us-row>
+        <us-col>
+            <us-card 
+                title="Card with media" 
+                subTitle="Image Left"
+                img-src="/built-to-grow--alt.jpg"
+                img-pos="left"
+            >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
+                <template #footer>
+                    <us-button variant="primary" block>Visit Florida Keys</us-button>
+                </template>
+            </us-card>           
+        </us-col>
+        <us-col>
+            <us-card 
+                title="Card with media" 
+                subTitle="Image Right"
+                img-src="/built-to-grow--alt.jpg"
+                img-pos="right"
+            >
+                <template #header>
+                    Flag Card
+                </template>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
+                <template #footer>
+                    <us-button variant="primary" block>Visit Florida Keys</us-button>
+                </template>
+            </us-card>         
+        </us-col>
+    </us-row>
 </div>
 
 ## Card Groups and Grids

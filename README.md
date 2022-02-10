@@ -1,4 +1,10 @@
-# uswds-vue
+# USWDS-Vue
+
+## A Bootstrap Theme for UWSWDS
+
+Rather than use [USWDS](https://thepipster.github.io/uswds-vue/) as-is, the philopshy of this library is to create a [bootstrap](https://bootstrap-vue.org/) theme for [USWDS](https://thepipster.github.io/uswds-vue/) and then build components on top of that. Thus leveraging the immense amount of work that has gone into making Bootstrap work on every platform, everywhere. Not to mention it's 508 compliance.
+
+This approach is in full compliance of the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/). Indeed, combining the best-of-breed private sector technology such as [bootstrap](https://bootstrap-vue.org/) with the domain-specific design work of the USWDS team gives the best of both worlds - and is exactly what the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/) was trying to achieve.
 
 ## **NEW** Getting Help & Contributing
 
@@ -14,8 +20,6 @@ This is a front end component library whose aim is to develop [Vue.js](https://v
 
 The primary goal of this library is to document and provide common UI components that can be included in other projects that adhere to or are based off of the USWDS, removing a significant amount of overhead UI development from such projects.
 
-This library attempts to follow the conventions laid down by [BootstrapVue](https://bootstrap-vue.org/), as these seem entirely sensible!
-
 ## Vue 3 support
 
 Support for Vue 3 is on the roadmap, but too many 3rd party libraries don't yet support Vue 3 so for now we're sticking with Vue 2. Please submit an issue if you want to push vor Vue 3 support sooner!
@@ -28,15 +32,18 @@ Full docs can be found [here](https://thepipster.github.io/uswds-vue/)
 
 ``` bash
 # With yarn
-yarn add uswds-vue uswds
+yarn add uswds-vue bootstrap
 
 # With npm
-npm i uswds-vue uswds
+npm i uswds-vue bootstrap
 ```
 
 You can import globally;
 
 ```js
+// Import bootstrap, or import in your head for SSR builds
+import 'bootstrap'
+
 // And then import the vue component library
 import { UswdsVue } from 'uswds-vue';
 Vue.use(UswdsVue);

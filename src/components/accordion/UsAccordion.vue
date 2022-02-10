@@ -1,5 +1,5 @@
 <template>
-<div class="usx-component accordion" :class="[{'accordion-flush':!bordered}, variant]" :id="divId" v-if="divId">
+<div class="usx-component accordion" :class="[{'accordion-flush':!bordered}, `accordion-${variant}`]" :id="divId" v-if="divId">
     <slot></slot>
 </div>
 </template>
@@ -47,6 +47,7 @@ export default {
 // $theme-accordion-border-width 
 
 @import "~bootstrap/scss/bootstrap.scss";
+@import "../../styles/a11y-color.scss";
 
 
 .usx-component.accordion {
@@ -55,16 +56,12 @@ export default {
         border: none;
     }
 
-    &.accordion-flush {
-        
-
-    }
-
     @each $variant, $token in $theme-colors {
 
         $color: map-get($theme-colors, $variant);
 
-        &.#{$variant}{
+        &.accordion-#{$variant}{
+
             &:not(.accordion-flush){ 
                 .accordion-body {
                     border-left: 5px solid $color;
@@ -72,22 +69,21 @@ export default {
                     border-bottom: 5px solid $color;
                 }                
             }
-        }
-             
-    }
 
-    &:not(.accordion-flush){
+            .accordion-button {
+                background-color: $color;
+                color: color-contrast($color) !important; // choose-contrast-color($colorLight) 
+            }                   
+        }
 
-        .accordion-item { 
-            margin-top: 10px;
-        }
-        .accordion-header {
-            padding-bottom: 0px !important;
-            //margin-top: 0.3em;
-        }
+      
     }
 
     .accordion-item {
+
+        .accordion-body {
+            padding-top: 0px;
+        }
 
         .accordion-header {
             padding-bottom: 0.5rem;
@@ -95,17 +91,34 @@ export default {
 
         .accordion-button {
             border-radius: 0px;
-            background-color: #f0f0f0;
-            color: black;
+            //background-color: #f0f0f0;
+            //color: black;
             box-shadow: none;
         }
 
         .accordion-button:not(.collapsed) {
             border-radius: 0px;
-            background-color: #f0f0f0;
+            //background-color: #f0f0f0;
         }
 
     }
+
+    &:not(.accordion-flush){
+
+        .accordion-item { 
+            margin-top: 10px;
+        }
+
+        .accordion-body {
+            padding-top: 1em;
+        }
+
+        .accordion-header {
+            padding-bottom: 0px !important;
+            //margin-top: 0.3em;
+        }
+    }
+
 
 }
 

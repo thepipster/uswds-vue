@@ -1,11 +1,10 @@
 <template>
 
-<div class="usx-component accordion-item " v-if="divId">
+<div class="usx-component accordion-item" v-if="divId">
     <h2 class="accordion-header" :id="`heading-${divId}`" >
         <button 
             type="button" 
             class="accordion-button collapsed fw-bold" 
-            :class="[`bg-${variant}`, `text-${variant}-contrast`]"
             data-bs-toggle="collapse" 
             :data-bs-target="`#collapse-${divId}`" 
             :aria-expanded="expanded" 
@@ -20,7 +19,7 @@
         :class="{'show':expanded}"
         :aria-labelledby="`heading${divId}`" 
         :data-bs-parent="(!multiSelect) ? `#${parentDivId}` : false">
-        <div class="accordion-body" :class="`border-${variant}`">
+        <div class="accordion-body">
             <slot></slot>
         </div>
     </div>
@@ -72,9 +71,9 @@ export default {
 };
 </script>
 <style lang="scss">
-
-.usx-component.accordion-item {
 /*
+.usx-component.accordion-item {
+
     border: none;
 
     .accordion-header {
@@ -92,7 +91,7 @@ export default {
         border-radius: 0px;
         background-color: #f0f0f0;
     }
-*/
-}
 
+}
+*/
 </style>

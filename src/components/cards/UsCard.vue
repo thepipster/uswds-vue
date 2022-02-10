@@ -3,14 +3,14 @@
 
         <img v-if="imgSrc && imgPos == 'top'" :src="imgSrc" class="card-img-top" :alt="imgAlt"/>
                 
-        <div class="row g-0" v-if="imgPos=='right' || imgPos=='left'">
+        <div class="row g-0" v-if="imgPos=='right'">
             <div class="col-md-8 d-flex flex-column pb-3">
                 <div class="card-body">
                     <slot name="title"><h5 class="card-title" v-if="title && !hasHeader">{{title}}</h5></slot>
                     <h6 class="card-subtitle mb-2 text-muted" v-if="subTitle">{{subTitle}}</h6>
                     <p class="card-text"><slot name="default"/></p>
                 </div>             
-                <div class="card-footer" :class="{'order-1':imgPos=='right'}">
+                <div class="card-footer">
                     <slot name="footer"/>
                 </div>                   
             </div>
@@ -18,6 +18,23 @@
                 <img v-if="imgSrc" :src="imgSrc" class="usx-card-fluid-img rounded-start" :alt="imgAlt"/>
             </div>
         </div>
+
+        <div class="row g-0" v-else-if="imgPos=='left'">
+            <div class="col-md-4">
+                <img v-if="imgSrc" :src="imgSrc" class="usx-card-fluid-img rounded-start" :alt="imgAlt"/>
+            </div>
+            <div class="col-md-8 d-flex flex-column pb-3">
+                <div class="card-body">
+                    <slot name="title"><h5 class="card-title" v-if="title && !hasHeader">{{title}}</h5></slot>
+                    <h6 class="card-subtitle mb-2 text-muted" v-if="subTitle">{{subTitle}}</h6>
+                    <p class="card-text"><slot name="default"/></p>
+                </div>             
+                <div class="card-footer">
+                    <slot name="footer"/>
+                </div>                   
+            </div>
+        </div>
+
 
         <div class="card-body" v-else>
             <slot name="title"><h5 class="card-title" v-if="title && !hasHeader">{{title}}</h5></slot>
