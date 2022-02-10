@@ -37,7 +37,7 @@ class Translate {
 
     _update(){
         for (let key in this.watchers) {
-            console.log(`Changed locale to ${this.locale} for div ${key}`);
+            //console.log(`Changed locale to ${this.locale} for div ${key}`);
             let el = this.watchers[key];
             this._translateElement(el);
         }
@@ -92,7 +92,7 @@ class Translate {
 
     _generateIndex(){
 
-        console.log(`Generating translation indexes`);
+        //console.log(`Generating translation indexes`);
 
         //this.msgHash = _.map(this.messages.en, 'txt');
 
@@ -107,7 +107,7 @@ class Translate {
             };
         }
 
-        console.log(this.messages.en, this.msgHash)
+        //console.log(this.messages.en, this.msgHash)
         
             
         // Create indexed string lookup
@@ -148,7 +148,7 @@ class Translate {
                 let test = txt.indexOf(this.messages['en'][key]) != -1;
                 //console.log(`>>> TESTING: ${txt}, ${test} Found match: ${txt.indexOf(msg)}`);
                 if (test){
-                    console.log(`>>> MATCHED: [${key}] ${txt}, Found match: ${this.messages['en'][key]}`);
+                    //console.log(`>>> MATCHED: [${key}] ${txt}, Found match: ${this.messages['en'][key]}`);
                     return key;
                 }
             }
@@ -210,7 +210,7 @@ class Translate {
 
                     //console.log(match);
                     let translated = this.messages[this.locale][matchKey];
-                    console.log(`>>> TRANSLATING [${matchKey}] "${txt}" => "${translated}"`);
+                    //console.log(`>>> TRANSLATING [${matchKey}] "${txt}" => "${translated}"`);
                     let newTxt = el.children[i].innerText.replace(txt, translated);
                     el.children[i].innerText = newTxt;
 
@@ -220,7 +220,7 @@ class Translate {
                     this.watchers[matchKey] = el;
                 }
                 else {
-                    console.warn(`No match for "${txt}", locale = ${this.locale}`);
+                    //console.warn(`No match for "${txt}", locale = ${this.locale}`);
 
                     // Add a translate key to this element so we can track it in case
                     // we get new translations (when a component mounts for example)

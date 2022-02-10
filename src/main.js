@@ -1,6 +1,6 @@
 import Logger from './utils/Logger';
 import VueRouter from 'vue-router';
-import 'bootstrap';
+//import 'bootstrap';
 
 import UsAlert from './components/UsAlert';
 import UsAccordion from './components/accordion/UsAccordion.vue';
@@ -101,6 +101,10 @@ export const Components = {
  */
 const UswdsVue = {
     install(Vue, config = {}) {
+
+        //if (document){
+        //    require('bootstrap');
+       // }
 
         Vue.use(Logger);
         Vue.use(VueRouter);

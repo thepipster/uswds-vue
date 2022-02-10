@@ -1,16 +1,16 @@
 <template>
 
 <div class="usx-component usx-modal" v-if="divId">
-    <!--
-    <button :id="`btn_${divId}`" type="button" class="btn btn-primary" data-bs-toggle="modal" :data-bs-target="`#modal_${divId}`">Open</button>
-    -->
-    <div :id="`modal_${divId}`" class="modal" tabindex="-1" :class="[`modal-${size}`]" >
+    
+    <button :ref="`btn_${divId}`" hidden style="display:none" data-bs-toggle="modal" :data-bs-target="`#modal_${divId}`">Open</button>
+    
+    <div :id="`modal_${divId}`" class="modal" tabindex="-1" :class="[`modal-${size}`]" :ref="`modalRef_${divId}`">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">
+                    <h5 class="modal-title w-100">
                         <slot name="footer">Modal title</slot>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close float-right" data-bs-dismiss="modal" aria-label="Close"></button>
                     </h5>
                 </div>
                 <div class="modal-body">
@@ -23,7 +23,7 @@
                     <slot name="buttons" v-bind="{onAffirmative, onCancel}">
                         <div align="right">
                             <us-button variant="outline-primary" @click="onCancel" data-bs-dismiss="modal">{{btnCancel}}</us-button>
-                            <us-button variant="primary" @click="onAffirmative">{{btnOk}}</us-button>
+                            <us-button variant="primary" @click="onAffirmative" data-bs-dismiss="modal">{{btnOk}}</us-button>
                         </div>
                     </slot>
 
@@ -38,7 +38,6 @@
 </template>
 
 <script>
- import { Modal } from 'bootstrap';
 
 export default {
     name: 'us-modal',
@@ -75,16 +74,20 @@ export default {
         value() {
             
             // Grab a reference to the modal if we don't already have it
-            if (!this.modalRef){
-                this.modalRef = new Modal(window.document.getElementById(`modal_${this.divId}`), {})                    
-            }
+            //if (!this.modalRef && bootstrap){
+            //    var ele = this.$refs[`modalRef_${this.divId}`];
+            //    this.modalRef = new bootstrap.Modal(ele, {})                    
+            //}
+
+            var ele = this.$refs[`btn_${this.divId}`];
+            ele.click();
 
             if (this.value && this.modalRef){
-                this.modalRef.show();
+                //this.modalRef.show();
                 this.isOpen = true;
             }
             else if (this.modalRef){
-                this.modalRef.hide();
+                //this.modalRef.hide();
                 this.isOpen = false;
             }      
             

@@ -13,16 +13,22 @@ This library attempts to follow the conventions laid down by [Bootstrap](https:/
 To install, you need to add `uswds-vue` itself and addiationally you'll need the `uswds` styles (but not the `uswds` javascript).
 
 ``` bash
+
 # With yarn
-yarn add uswds-vue uswds
+yarn add bootstrap
+yarn add uswds-vue 
 
 # With npm
-npm i uswds-vue uswds
+npm i bootstrap
+npm i uswds-vue
 ```
 
 Then you can import globally (for example in your `main.js` file);
 
 ``` js
+
+// Import bootstrap, or import in your head for SSR builds
+import 'bootstrap'
 
 // Import the vue component library
 import { UswdsVue } from 'uswds-vue';
