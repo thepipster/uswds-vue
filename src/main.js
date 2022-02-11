@@ -1,5 +1,4 @@
 import Logger from './utils/Logger';
-import VueRouter from 'vue-router';
 //import 'bootstrap';
 
 import UsAlert from './components/UsAlert';
@@ -106,8 +105,9 @@ const UswdsVue = {
         //    require('bootstrap');
        // }
 
-        Vue.use(Logger);
-        Vue.use(VueRouter);
+        if (!Vue.$log){
+            Vue.use(Logger);
+        }
 
         Object.keys(Components).forEach((name) => {
             Vue.component(name, Components[name]);
