@@ -69,7 +69,7 @@ Set the `img-pos` prop to either `top` or `bottom` for vertical image placement.
             <us-card 
                 title="Card with media" 
                 subTitle="Image Top"
-                img-src="/built-to-grow--alt.jpg"
+                img-src="https://www.fillmurray.com/640/360"
                 img-pos="top"
             >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
@@ -82,7 +82,7 @@ Set the `img-pos` prop to either `top` or `bottom` for vertical image placement.
             <us-card 
                 title="Card with media" 
                 subTitle="Image Bottom"
-                img-src="/built-to-grow--alt.jpg"
+                img-src="https://www.fillmurray.com/640/360"
                 img-pos="bottom"
             >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
@@ -104,7 +104,7 @@ Likewise, set the `img-pos` prop to either `left` or `right` for vertical image 
             <us-card 
                 title="Card with media" 
                 subTitle="Image Left"
-                img-src="/built-to-grow--alt.jpg"
+                img-src="https://www.fillmurray.com/640/360"
                 img-pos="left"
             >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
@@ -117,7 +117,7 @@ Likewise, set the `img-pos` prop to either `left` or `right` for vertical image 
             <us-card 
                 title="Card with media" 
                 subTitle="Image Right"
-                img-src="/built-to-grow--alt.jpg"
+                img-src="https://www.fillmurray.com/640/360"
                 img-pos="right"
             >
                 <template #header>
@@ -141,7 +141,7 @@ As `uswds-vue` is built on bootstrap now, you can directly use bootstrap to easi
 <div class="card-group">
     <us-card 
         title="Card with media" 
-        img-src="/built-to-grow--alt.jpg"
+        img-src="https://www.fillmurray.com/640/360"
         img-pos="top"
     >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
@@ -176,7 +176,7 @@ Use the Bootstrap grid system and its `.row-cols` classes to control how many gr
   <div class="col">
     <us-card 
         title="Card in a grid" 
-        img-src="/built-to-grow--alt.jpg"
+        img-src="https://www.fillmurray.com/640/360"
     >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
     </us-card> 
@@ -184,7 +184,7 @@ Use the Bootstrap grid system and its `.row-cols` classes to control how many gr
   <div class="col">
     <us-card 
         title="Card in a grid" 
-        img-src="/built-to-grow--alt.jpg"
+        img-src="https://www.fillmurray.com/640/360"
     >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
     </us-card> 
@@ -192,7 +192,7 @@ Use the Bootstrap grid system and its `.row-cols` classes to control how many gr
   <div class="col">
     <us-card 
         title="Card in a grid" 
-        img-src="/built-to-grow--alt.jpg"
+        img-src="https://www.fillmurray.com/640/360"
     >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
     </us-card> 
@@ -200,7 +200,7 @@ Use the Bootstrap grid system and its `.row-cols` classes to control how many gr
   <div class="col">
     <us-card 
         title="Card in a grid" 
-        img-src="/built-to-grow--alt.jpg"
+        img-src="https://www.fillmurray.com/640/360"
     >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
     </us-card> 
@@ -212,7 +212,7 @@ Use the Bootstrap grid system and its `.row-cols` classes to control how many gr
   <div class="col">
     <us-card 
         title="Card in a grid" 
-        img-src="/built-to-grow--alt.jpg"
+        img-src="https://www.fillmurray.com/640/360"
     >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
     </us-card> 
@@ -220,7 +220,7 @@ Use the Bootstrap grid system and its `.row-cols` classes to control how many gr
   <div class="col">
     <us-card 
         title="Card in a grid" 
-        img-src="/built-to-grow--alt.jpg"
+        img-src="https://www.fillmurray.com/640/360"
     >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
     </us-card> 
@@ -228,7 +228,7 @@ Use the Bootstrap grid system and its `.row-cols` classes to control how many gr
   <div class="col">
     <us-card 
         title="Card in a grid" 
-        img-src="/built-to-grow--alt.jpg"
+        img-src="https://www.fillmurray.com/640/360"
     >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
     </us-card> 
@@ -236,7 +236,7 @@ Use the Bootstrap grid system and its `.row-cols` classes to control how many gr
   <div class="col">
     <us-card 
         title="Card in a grid" 
-        img-src="/built-to-grow--alt.jpg"
+        img-src="https://www.fillmurray.com/640/360"
     >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.
     </us-card> 

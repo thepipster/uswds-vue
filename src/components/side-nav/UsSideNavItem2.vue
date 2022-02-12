@@ -52,9 +52,12 @@
 </template>
 
 <script>
-
+import {RouterLink} from 'vue-router';
 export default {
     name: 'us-side-nav-item',
+    components: {
+        RouterLink
+    },    
     props: {
         title: {
             type: String,

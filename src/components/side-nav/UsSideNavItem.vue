@@ -21,10 +21,13 @@
 </template>
 
 <script>
-
+import {RouterLink} from 'vue-router';
 // https://designsystem.digital.gov/components/side-navigation/
 export default {
     name: 'us-side-nav-item',
+    components: {
+        RouterLink
+    },    
     props: {
         active: {
             type: Boolean,
