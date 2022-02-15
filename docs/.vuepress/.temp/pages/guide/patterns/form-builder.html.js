@@ -7,8 +7,14 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1644897463000,
+    "contributors": [
+      {
+        "name": "Mike Pritchard",
+        "email": "mike@arsenicsoup.com",
+        "commits": 1
+      }
+    ]
   },
   "filePathRelative": "guide/patterns/form-builder.md"
 }

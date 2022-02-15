@@ -99,8 +99,14 @@ export const data = {
     }
   ],
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1644897463000,
+    "contributors": [
+      {
+        "name": "Mike Pritchard",
+        "email": "mike@arsenicsoup.com",
+        "commits": 1
+      }
+    ]
   },
   "filePathRelative": "guide/components/alert.md"
 }

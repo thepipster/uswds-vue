@@ -5,8 +5,6 @@ export const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/index.html.vue")),
   // path: /guide/
   "v-fffb8e28": defineAsyncComponent(() => import(/* webpackChunkName: "v-fffb8e28" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/index.html.vue")),
-  // path: /guide/forms/form.html
-  "v-75b10249": defineAsyncComponent(() => import(/* webpackChunkName: "v-75b10249" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/forms/form.html.vue")),
   // path: /guide/components/accordion.html
   "v-ea2abd84": defineAsyncComponent(() => import(/* webpackChunkName: "v-ea2abd84" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/components/accordion.html.vue")),
   // path: /guide/components/alert.html
@@ -37,6 +35,16 @@ export const pagesComponents = {
   "v-0915fb4e": defineAsyncComponent(() => import(/* webpackChunkName: "v-0915fb4e" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/components/tabs.html.vue")),
   // path: /guide/components/tag.html
   "v-dcf6e028": defineAsyncComponent(() => import(/* webpackChunkName: "v-dcf6e028" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/components/tag.html.vue")),
+  // path: /guide/forms/form.html
+  "v-75b10249": defineAsyncComponent(() => import(/* webpackChunkName: "v-75b10249" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/forms/form.html.vue")),
+  // path: /guide/patterns/banner.html
+  "v-ea5ee226": defineAsyncComponent(() => import(/* webpackChunkName: "v-ea5ee226" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/banner.html.vue")),
+  // path: /guide/patterns/form-builder.html
+  "v-c6409b72": defineAsyncComponent(() => import(/* webpackChunkName: "v-c6409b72" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/form-builder.html.vue")),
+  // path: /guide/patterns/gov-banner.html
+  "v-de1a27a4": defineAsyncComponent(() => import(/* webpackChunkName: "v-de1a27a4" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/gov-banner.html.vue")),
+  // path: /guide/patterns/left-nav.html
+  "v-2ac8925c": defineAsyncComponent(() => import(/* webpackChunkName: "v-2ac8925c" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/left-nav.html.vue")),
   // path: /guide/utils/breakpoints.html
   "v-571e6501": defineAsyncComponent(() => import(/* webpackChunkName: "v-571e6501" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/utils/breakpoints.html.vue")),
   // path: /guide/utils/colors.html
@@ -53,14 +61,6 @@ export const pagesComponents = {
   "v-b0cc6380": defineAsyncComponent(() => import(/* webpackChunkName: "v-b0cc6380" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/utils/typography.html.vue")),
   // path: /guide/utils/validation.html
   "v-4f990d94": defineAsyncComponent(() => import(/* webpackChunkName: "v-4f990d94" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/utils/validation.html.vue")),
-  // path: /guide/patterns/banner.html
-  "v-ea5ee226": defineAsyncComponent(() => import(/* webpackChunkName: "v-ea5ee226" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/banner.html.vue")),
-  // path: /guide/patterns/form-builder.html
-  "v-c6409b72": defineAsyncComponent(() => import(/* webpackChunkName: "v-c6409b72" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/form-builder.html.vue")),
-  // path: /guide/patterns/gov-banner.html
-  "v-de1a27a4": defineAsyncComponent(() => import(/* webpackChunkName: "v-de1a27a4" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/gov-banner.html.vue")),
-  // path: /guide/patterns/left-nav.html
-  "v-2ac8925c": defineAsyncComponent(() => import(/* webpackChunkName: "v-2ac8925c" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/left-nav.html.vue")),
   // path: /guide/forms/form-inputs/form-boolean.html
   "v-79783411": defineAsyncComponent(() => import(/* webpackChunkName: "v-79783411" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/forms/form-inputs/form-boolean.html.vue")),
   // path: /guide/forms/form-inputs/form-checkbox.html

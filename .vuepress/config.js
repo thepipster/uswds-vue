@@ -36,6 +36,9 @@ module.exports = {
     lineNumbers: true
   },  
 
+  home: '/uswds-vue/',
+  docsDir: './docs',
+
   //sass: {
   //  prependData: '@import "@theme/styles/global.scss"'
   //},  
@@ -48,7 +51,8 @@ module.exports = {
   themeConfig: {
     repo: '',
     editLinks: false,
-    docsDir: '',
+    home: '/uswds-vue/',
+    docsDir: '/docs',
     editLinkText: '',
     lastUpdated: 'Last Updated', // string | boolean,    
     sidebarDepth: 1,

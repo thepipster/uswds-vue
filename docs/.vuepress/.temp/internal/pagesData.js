@@ -3,8 +3,6 @@ export const pagesData = {
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
   // path: /guide/
   "v-fffb8e28": () => import(/* webpackChunkName: "v-fffb8e28" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/index.html.js").then(({ data }) => data),
-  // path: /guide/forms/form.html
-  "v-75b10249": () => import(/* webpackChunkName: "v-75b10249" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/forms/form.html.js").then(({ data }) => data),
   // path: /guide/components/accordion.html
   "v-ea2abd84": () => import(/* webpackChunkName: "v-ea2abd84" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/components/accordion.html.js").then(({ data }) => data),
   // path: /guide/components/alert.html
@@ -35,6 +33,16 @@ export const pagesData = {
   "v-0915fb4e": () => import(/* webpackChunkName: "v-0915fb4e" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/components/tabs.html.js").then(({ data }) => data),
   // path: /guide/components/tag.html
   "v-dcf6e028": () => import(/* webpackChunkName: "v-dcf6e028" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/components/tag.html.js").then(({ data }) => data),
+  // path: /guide/forms/form.html
+  "v-75b10249": () => import(/* webpackChunkName: "v-75b10249" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/forms/form.html.js").then(({ data }) => data),
+  // path: /guide/patterns/banner.html
+  "v-ea5ee226": () => import(/* webpackChunkName: "v-ea5ee226" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/banner.html.js").then(({ data }) => data),
+  // path: /guide/patterns/form-builder.html
+  "v-c6409b72": () => import(/* webpackChunkName: "v-c6409b72" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/form-builder.html.js").then(({ data }) => data),
+  // path: /guide/patterns/gov-banner.html
+  "v-de1a27a4": () => import(/* webpackChunkName: "v-de1a27a4" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/gov-banner.html.js").then(({ data }) => data),
+  // path: /guide/patterns/left-nav.html
+  "v-2ac8925c": () => import(/* webpackChunkName: "v-2ac8925c" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/left-nav.html.js").then(({ data }) => data),
   // path: /guide/utils/breakpoints.html
   "v-571e6501": () => import(/* webpackChunkName: "v-571e6501" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/utils/breakpoints.html.js").then(({ data }) => data),
   // path: /guide/utils/colors.html
@@ -51,14 +59,6 @@ export const pagesData = {
   "v-b0cc6380": () => import(/* webpackChunkName: "v-b0cc6380" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/utils/typography.html.js").then(({ data }) => data),
   // path: /guide/utils/validation.html
   "v-4f990d94": () => import(/* webpackChunkName: "v-4f990d94" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/utils/validation.html.js").then(({ data }) => data),
-  // path: /guide/patterns/banner.html
-  "v-ea5ee226": () => import(/* webpackChunkName: "v-ea5ee226" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/banner.html.js").then(({ data }) => data),
-  // path: /guide/patterns/form-builder.html
-  "v-c6409b72": () => import(/* webpackChunkName: "v-c6409b72" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/form-builder.html.js").then(({ data }) => data),
-  // path: /guide/patterns/gov-banner.html
-  "v-de1a27a4": () => import(/* webpackChunkName: "v-de1a27a4" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/gov-banner.html.js").then(({ data }) => data),
-  // path: /guide/patterns/left-nav.html
-  "v-2ac8925c": () => import(/* webpackChunkName: "v-2ac8925c" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/left-nav.html.js").then(({ data }) => data),
   // path: /guide/forms/form-inputs/form-boolean.html
   "v-79783411": () => import(/* webpackChunkName: "v-79783411" */"/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.temp/pages/guide/forms/form-inputs/form-boolean.html.js").then(({ data }) => data),
   // path: /guide/forms/form-inputs/form-checkbox.html
