@@ -1,0 +1,46 @@
+{
+  "hash": "abbde142",
+  "browserHash": "4153d0f3",
+  "optimized": {
+    "vue": {
+      "file": "/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.cache/vue.js",
+      "src": "/Users/mike/Projects/ArsenicSoup/uswds-vue/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "file": "/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.cache/vue-router.js",
+      "src": "/Users/mike/Projects/ArsenicSoup/uswds-vue/node_modules/vue-router/dist/vue-router.esm-bundler.js",
+      "needsInterop": false
+    },
+    "@vue/devtools-api": {
+      "file": "/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.cache/@vue_devtools-api.js",
+      "src": "/Users/mike/Projects/ArsenicSoup/uswds-vue/node_modules/@vue/devtools-api/lib/esm/index.js",
+      "needsInterop": false
+    },
+    "@vueuse/core": {
+      "file": "/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.cache/@vueuse_core.js",
+      "src": "/Users/mike/Projects/ArsenicSoup/uswds-vue/node_modules/@vueuse/core/index.mjs",
+      "needsInterop": false
+    },
+    "color": {
+      "file": "/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.cache/color.js",
+      "src": "/Users/mike/Projects/ArsenicSoup/uswds-vue/node_modules/color/index.js",
+      "needsInterop": true
+    },
+    "lodash": {
+      "file": "/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.cache/lodash.js",
+      "src": "/Users/mike/Projects/ArsenicSoup/uswds-vue/node_modules/lodash/lodash.js",
+      "needsInterop": true
+    },
+    "nprogress": {
+      "file": "/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.cache/nprogress.js",
+      "src": "/Users/mike/Projects/ArsenicSoup/uswds-vue/node_modules/nprogress/nprogress.js",
+      "needsInterop": true
+    },
+    "@vuepress/shared": {
+      "file": "/Users/mike/Projects/ArsenicSoup/uswds-vue/docs/.vuepress/.cache/@vuepress_shared.js",
+      "src": "/Users/mike/Projects/ArsenicSoup/uswds-vue/node_modules/@vuepress/shared/lib/esm/index.js",
+      "needsInterop": false
+    }
+  }
+}
