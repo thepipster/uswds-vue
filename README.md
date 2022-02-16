@@ -1,16 +1,8 @@
-# USWDS-Vue
+# [USWDS-Vue](https://thepipster.github.io/uswds-vue/)
 
-## A Bootstrap Theme for UWSWDS
+## Vue 3 support is coming!!! 
 
-Rather than use [USWDS](https://thepipster.github.io/uswds-vue/) as-is, the philopshy of this library is to create a [bootstrap](https://bootstrap-vue.org/) theme for [USWDS](https://thepipster.github.io/uswds-vue/) and then build components on top of that. Thus leveraging the immense amount of work that has gone into making Bootstrap work on every platform, everywhere. Not to mention it's 508 compliance.
-
-This approach is in full compliance of the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/). Indeed, combining the best-of-breed private sector technology such as [bootstrap](https://bootstrap-vue.org/) with the domain-specific design work of the USWDS team gives the best of both worlds - and is exactly what the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/) was trying to achieve.
-
-## **NEW** Getting Help & Contributing
-
-Apologies for lack of support lately, if you need help you can find me on Twitter at @MikeJPritchard. Please just ping me to let me know you're using this. If I know people are using this, then I'll be more active building and supporting it! 
-
-And even better, if you want to contribute let me know!
+Working on this right now, I hope to get this out by the March 1st!
 
 ## Introduction
 
@@ -20,13 +12,23 @@ This is a front end component library whose aim is to develop [Vue.js](https://v
 
 The primary goal of this library is to document and provide common UI components that can be included in other projects that adhere to or are based off of the USWDS, removing a significant amount of overhead UI development from such projects.
 
-## Vue 3 support
-
-Support for Vue 3 is on the roadmap, but too many 3rd party libraries don't yet support Vue 3 so for now we're sticking with Vue 2. Please submit an issue if you want to push vor Vue 3 support sooner!
-
-## Documentation
+### Documentation
 
 Full docs can be found [here](https://thepipster.github.io/uswds-vue/)
+
+### A Bootstrap Theme for UWSWDS
+
+Rather than use [USWDS](https://thepipster.github.io/uswds-vue/) as-is, the philopshy of this library is to create a [bootstrap](https://bootstrap-vue.org/) theme for [USWDS](https://thepipster.github.io/uswds-vue/) and then build components on top of that. Thus leveraging the immense amount of work that has gone into making Bootstrap work on every platform, everywhere. Not to mention it's 508 compliance.
+
+This approach is in full compliance of the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/). Indeed, combining the best-of-breed private sector technology such as [bootstrap](https://bootstrap-vue.org/) with the domain-specific design work of the USWDS team gives the best of both worlds - and is exactly what the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/) was trying to achieve.
+
+## Getting Help & Contributing
+
+If you need help you can find me on Twitter at @MikeJPritchard. Please just ping me to let me know you're using this. If I know people are using this, then I'll be more active building and supporting it! 
+
+And even better, if you want to contribute let me know!
+
+
 
 ## Install
 
