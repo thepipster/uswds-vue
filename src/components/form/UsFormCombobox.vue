@@ -77,7 +77,6 @@
         <span :id="`{divId}--assistiveHint`" class="usa-sr-only">
             When autocomplete results are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.
         </span>
-
     </div>
 </template>
 
@@ -130,9 +129,16 @@ export default {
         options(){
             this.__setup();
         },
-        currentValue(){
-            this.__setup();
-        }
+        //currentValue(){
+        //    if (!this.isUpdatingLabel){
+        //        this.__setup();
+        //    }
+        //},
+        value(){
+            if (!this.isUpdatingLabel){
+                this.__setup();
+            }
+        }        
     },
     mounted(){
         this.filteredOpts = this.options;
@@ -143,7 +149,9 @@ export default {
     methods: {
 
         __setup(){
-            
+
+            this.filteredOpts = this.options;
+
             if (!this.options || !this.value){
                 this.currentValueLabel = null;
                 return;
@@ -191,37 +199,6 @@ export default {
 
         },
 
-        __debouncedOnChange: debounce(function(){
-            this.__filterOptions();
-        }, 250),
-
-        isFiltered(index){
-            let re = new RegExp(this.currentValueLabel, 'i');
-            let label = this.getLabel(index, true);
-            if (label && label.match(re)){
-                return false;
-            }
-            return true;
-        },
-
-        __filterOptions(){
-            
-            if (!this.currentValueLabel){
-                this.filteredOpts = this.options;
-            }           
-            
-            let re = new RegExp(this.currentValueLabel, 'i');
-
-            let newOpts = [];
-            for (let i=0; i<this.options.length; i+=1){
-                if (!this.isFiltered(i)){
-                    newOpts.push(this.options[i]);
-                }
-            }
-
-            this.filteredOpts = newOpts;
-        },
-
         onSelectVal(index){
 
             // Flag that we're updating the label so we
@@ -241,6 +218,38 @@ export default {
             this.$nextTick(()=>{
                 this.isUpdatingLabel = false;
             })
+        },
+
+        __debouncedOnChange: debounce(function(){
+            this.__filterOptions();
+        }, 250),
+
+        isFiltered(index){
+            let re = new RegExp(this.currentValueLabel, 'i');
+            let label = this.getLabel(index, true);
+            if (label && label.match(re)){
+                //this.$log(`${label} != ${this.currentValueLabel}`)
+                return false;
+            }
+            return true;
+        },
+
+        __filterOptions(){
+                        
+            if (!this.currentValueLabel){
+                //this.$log('filteredOpts = ', this.options);
+                this.filteredOpts = this.options;
+                return;
+            }           
+            
+            let newOpts = [];
+            for (let i=0; i<this.options.length; i+=1){
+                if (!this.isFiltered(i)){
+                    newOpts.push(this.options[i]);
+                }
+            }
+
+            this.filteredOpts = newOpts;
         },
 
         onClearInput(){
@@ -340,7 +349,7 @@ export default {
 
     input {
         // Fix margin bug when using validation classes
-        margin-top: 0;
+        //margin-top: 0;
     }
 
     &.usx-success {
