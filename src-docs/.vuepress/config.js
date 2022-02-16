@@ -101,8 +101,6 @@ module.exports = {
             'components/button',
             'components/card',
             'components/image',
-            //'components/footer',
-            //'components/header',
             'components/lists',
             'components/modal',
             'components/progress',
@@ -137,7 +135,7 @@ module.exports = {
           collapsable: false,
           children: [
             'patterns/gov-banner',
-            //'patterns/footer',
+            'patterns/footer',
             'patterns/left-nav',
             'patterns/banner'
           ]

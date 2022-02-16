@@ -24,7 +24,7 @@ import UsButtonGroup from './components/UsButtonGroup';
 import UsBadge from './components/UsBadge';
 import UsImg from './components/UsImg';
 import UsHeader from './components/header/UsHeader';
-import UsFooter from './components/UsFooter';
+import UsFooter from './components/footer/UsFooter';
 import UsNavItem from './components/header/UsNavItem';
 import UsHeaderNav from './components/header/UsHeaderNav';
 import UsSideNavItem from './components/side-nav/UsSideNavItem';
