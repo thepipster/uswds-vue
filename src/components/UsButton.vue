@@ -12,7 +12,7 @@
     <button
         v-else 
         v-bind="$props"
-        :class="['usx-component', 'btn', 'btn-'+variant, `text-${variant}-contrast`]"
+        :class="['usx-component', 'btn', 'btn-'+variant, `text-${variant}-contrast`, `btn-${size}`]"
         @click="onClick()"
     >
         <slot name="default"> Button </slot>
@@ -38,6 +38,10 @@ export default {
             type: Boolean,
             default: false
         },
+        size: {
+            type: [String, Object],
+            default: null
+        },           
         to: {
             type: [String, Object],
             default: null

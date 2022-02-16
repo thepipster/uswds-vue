@@ -53,6 +53,16 @@ The component has built-in support for [vue-router](https://router.vuejs.org/), 
 </us-button>
 ```
 
+## Sizes
+
+There are 3 button sizes; small, regular and large. This is controlled by adding the prop `size` with values of `lg`, `sm` or just omit for a regular size button.
+
+<div class="mt-3 mb-3">
+    <us-button variant="primary" size="sm" class="mb-1">A small button</us-button>
+    <us-button variant="primary" class="mb-1">A regular size button</us-button>
+    <us-button variant="primary" size="lg" class="mb-1">A large button</us-button>
+</div>
+
 
 ## Loading animation
 
