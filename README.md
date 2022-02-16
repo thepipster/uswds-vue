@@ -24,11 +24,9 @@ This approach is in full compliance of the [21st Century IDEA act](https://digit
 
 ## Getting Help & Contributing
 
-If you need help you can find me on Twitter at @MikeJPritchard. Please just ping me to let me know you're using this. If I know people are using this, then I'll be more active building and supporting it! 
+If you need help, submit an issue or you can find me on Twitter at @MikeJPritchard. Please just DM me to let me know you're using this. If I know people are using this, then I'll be more active building and supporting it! 
 
 And even better, if you want to contribute let me know!
-
-
 
 ## Install
 

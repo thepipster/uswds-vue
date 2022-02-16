@@ -140,5 +140,6 @@
     "vuejs"
   ],
   "license": "MIT",
-  "repository": "https://github.com/thepipster/uswds-vue"
+  "repository": "https://github.com/thepipster/uswds-vue",
+  "homepage": "https://thepipster.github.io/uswds-vue/"
 }
