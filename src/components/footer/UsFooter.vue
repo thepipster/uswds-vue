@@ -1,4 +1,12 @@
 <template>
+
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fixed bottom</a>
+        </div>
+    </nav>
+
+<!--
     <div v-if="!isDismissed" class="usx-component usa-alert m-0 usx-alert" :class="[alertClass, { 'usa-alert--slim': size == 'sm', 'usa-alert--no-icon': noIcon, 'no-border': noBorder }]">
         <div class="usa-alert__body">
             
@@ -18,11 +26,12 @@
                 <us-progress v-if="showCountdown && time" :value="timer" :max="progressMax" height="3px"/>
             </div>
 
-            <!-- If no title, add a little bit of padding at the bottom -->
+            If no title, add a little bit of padding at the bottom 
             <div v-if="!title && size != 'sm'" style="height:5px"></div>
 
         </div>
     </div>
+    -->
 </template>
 
 <script>
@@ -39,7 +48,7 @@ import {isNumber} from 'lodash';
  *    title (string):
  */
 export default {
-    name: 'us-alert',
+    name: 'us-footer',
     props: {
         variant: {
             type: String,

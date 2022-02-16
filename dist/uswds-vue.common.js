@@ -35415,6 +35415,13 @@ module.exports = !fails(function () {
 
 /***/ }),
 
+/***/ "be17":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
 /***/ "c04e":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49051,12 +49058,12 @@ var UsStepIndicator_component = normalizeComponent(
 )
 
 /* harmony default export */ var UsStepIndicator = (UsStepIndicator_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"72a8860a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UsButton.vue?vue&type=template&id=4c938077&
-var UsButtonvue_type_template_id_4c938077_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.to)?_c('router-link',{class:['usx-component', 'btn', 'btn-'+_vm.variant, ("text-" + _vm.variant + "-contrast")],attrs:{"tag":"button","to":_vm.to}},[_vm._t("default",function(){return [_vm._v(" Button ")]}),(_vm.isLoading)?_c('i',{staticClass:"fas fa-spinner fa-spin ml-1"}):_vm._e()],2):_c('button',_vm._b({class:['usx-component', 'btn', 'btn-'+_vm.variant, ("text-" + _vm.variant + "-contrast")],on:{"click":function($event){return _vm.onClick()}}},'button',_vm.$props,false),[_vm._t("default",function(){return [_vm._v(" Button ")]}),(_vm.isLoading)?_c('i',{staticClass:"fas fa-spinner fa-spin ml-1"}):_vm._e()],2)}
-var UsButtonvue_type_template_id_4c938077_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"72a8860a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UsButton.vue?vue&type=template&id=5cf8d6e0&
+var UsButtonvue_type_template_id_5cf8d6e0_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.to)?_c('router-link',{class:['usx-component', 'btn', 'btn-'+_vm.variant, ("text-" + _vm.variant + "-contrast")],attrs:{"tag":"button","to":_vm.to}},[_vm._t("default",function(){return [_vm._v(" Button ")]}),(_vm.isLoading)?_c('i',{staticClass:"fas fa-spinner fa-spin ml-1"}):_vm._e()],2):_c('button',_vm._b({class:['usx-component', 'btn', 'btn-'+_vm.variant, ("text-" + _vm.variant + "-contrast"), ("btn-" + _vm.size)],on:{"click":function($event){return _vm.onClick()}}},'button',_vm.$props,false),[_vm._t("default",function(){return [_vm._v(" Button ")]}),(_vm.isLoading)?_c('i',{staticClass:"fas fa-spinner fa-spin ml-1"}):_vm._e()],2)}
+var UsButtonvue_type_template_id_5cf8d6e0_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/UsButton.vue?vue&type=template&id=4c938077&
+// CONCATENATED MODULE: ./src/components/UsButton.vue?vue&type=template&id=5cf8d6e0&
 
 // CONCATENATED MODULE: ./node_modules/vue-router/dist/vue-router.esm.js
 /*!
@@ -52125,6 +52132,10 @@ if (inBrowser && window.Vue) {
       type: Boolean,
       default: false
     },
+    size: {
+      type: [String, Object],
+      default: null
+    },
     to: {
       type: [String, Object],
       default: null
@@ -52152,8 +52163,8 @@ var UsButtonvue_type_style_index_0_lang_scss_ = __webpack_require__("5b41");
 
 var UsButton_component = normalizeComponent(
   components_UsButtonvue_type_script_lang_js_,
-  UsButtonvue_type_template_id_4c938077_render,
-  UsButtonvue_type_template_id_4c938077_staticRenderFns,
+  UsButtonvue_type_template_id_5cf8d6e0_render,
+  UsButtonvue_type_template_id_5cf8d6e0_staticRenderFns,
   false,
   null,
   null,
@@ -52270,18 +52281,60 @@ var UsBadge_component = normalizeComponent(
 )
 
 /* harmony default export */ var UsBadge = (UsBadge_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"72a8860a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UsImg.vue?vue&type=template&id=1361e520&
-var UsImgvue_type_template_id_1361e520_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('img',{staticClass:"usx-component usx-img",class:[{'fluid':_vm.fluid}],attrs:{"src":_vm.src}})}
-var UsImgvue_type_template_id_1361e520_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"72a8860a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UsImg.vue?vue&type=template&id=178846ac&
+var UsImgvue_type_template_id_178846ac_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('img',{ref:_vm.divId,staticClass:"usx-component usx-img",class:[
+        {
+            'img-fluid':_vm.fluid, 
+            'img-thumbnail':_vm.thumbnail, 
+            'img-fluid w-100':_vm.fluidGrow,
+            'rounded-top': _vm.rounded && _vm.rounded == 'top',
+            'rounded-right': _vm.rounded && _vm.rounded == 'right',
+            'rounded-left': _vm.rounded && _vm.rounded == 'left',
+            'rounded-bottom': _vm.rounded && _vm.rounded == 'bottom',
+            'rounded-circle': _vm.rounded && _vm.rounded == 'circle',
+            'rounded-0': _vm.rounded && _vm.rounded == '0',
+            'rounded-1': _vm.rounded && _vm.rounded == '1',
+            'rounded-2': _vm.rounded && _vm.rounded == '2',
+            'rounded-3': _vm.rounded && _vm.rounded == '3',
+            'rounded': _vm.rounded === true
+        }
+    ],style:(_vm.style),attrs:{"data-src":_vm.imgSrc,"src":__webpack_require__("be17"),"alt":_vm.alt}})}
+var UsImgvue_type_template_id_178846ac_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/UsImg.vue?vue&type=template&id=1361e520&
+// CONCATENATED MODULE: ./src/components/UsImg.vue?vue&type=template&id=178846ac&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UsImg.vue?vue&type=script&lang=js&
+
+
 //
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ var UsImgvue_type_script_lang_js_ = ({
   name: 'us-img',
   props: {
@@ -52293,9 +52346,100 @@ var UsImgvue_type_template_id_1361e520_staticRenderFns = []
       type: String,
       default: null
     },
+    width: {
+      type: String,
+      default: null
+    },
+    height: {
+      type: String,
+      default: null
+    },
     fluid: {
       type: Boolean,
       default: false
+    },
+    fluidGrow: {
+      type: Boolean,
+      default: false
+    },
+    rounded: {
+      type: [Boolean, String],
+      default: false
+    },
+    lazy: {
+      type: Boolean,
+      default: false
+    },
+    thumbnail: {
+      type: Boolean,
+      default: false
+    },
+    blankColor: {
+      type: String,
+      default: null
+    },
+    blank: {
+      type: Boolean,
+      default: false
+    }
+  },
+
+  /*
+  <svg xmlns='http://www.w3.org/2000/svg'  width='400' height='400' viewBox='0 0 800 800'><rect fill='#330033' width='800' height='800'/><g fill='none' stroke='#404'  stroke-width='1'><path d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/><path d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/><path d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/><path d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/><path d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/></g><g  fill='#505'><circle  cx='769' cy='229' r='5'/><circle  cx='539' cy='269' r='5'/><circle  cx='603' cy='493' r='5'/><circle  cx='731' cy='737' r='5'/><circle  cx='520' cy='660' r='5'/><circle  cx='309' cy='538' r='5'/><circle  cx='295' cy='764' r='5'/><circle  cx='40' cy='599' r='5'/><circle  cx='102' cy='382' r='5'/><circle  cx='127' cy='80' r='5'/><circle  cx='370' cy='105' r='5'/><circle  cx='578' cy='42' r='5'/><circle  cx='237' cy='261' r='5'/><circle  cx='390' cy='382' r='5'/></g></svg>
+  <svg xmlns='http://www.w3.org/2000/svg' width='100%'><defs><linearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%' gradientTransform='rotate(261,1270,645)'><stop offset='0'  stop-color='#8180B2'/><stop offset='1'  stop-color='#565595'/></linearGradient><pattern patternUnits='userSpaceOnUse' id='b'  width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'><g fill-opacity='0.09'><polygon fill='#444' points='90 150 0 300 180 300'/><polygon points='90 150 180 0 0 0'/><polygon fill='#AAA' points='270 150 360 0 180 0'/><polygon fill='#DDD' points='450 150 360 300 540 300'/><polygon fill='#999' points='450 150 540 0 360 0'/><polygon points='630 150 540 300 720 300'/><polygon fill='#DDD' points='630 150 720 0 540 0'/><polygon fill='#444' points='810 150 720 300 900 300'/><polygon fill='#FFF' points='810 150 900 0 720 0'/><polygon fill='#DDD' points='990 150 900 300 1080 300'/><polygon fill='#444' points='990 150 1080 0 900 0'/><polygon fill='#DDD' points='90 450 0 600 180 600'/><polygon points='90 450 180 300 0 300'/><polygon fill='#666' points='270 450 180 600 360 600'/><polygon fill='#AAA' points='270 450 360 300 180 300'/><polygon fill='#DDD' points='450 450 360 600 540 600'/><polygon fill='#999' points='450 450 540 300 360 300'/><polygon fill='#999' points='630 450 540 600 720 600'/><polygon fill='#FFF' points='630 450 720 300 540 300'/><polygon points='810 450 720 600 900 600'/><polygon fill='#DDD' points='810 450 900 300 720 300'/><polygon fill='#AAA' points='990 450 900 600 1080 600'/><polygon fill='#444' points='990 450 1080 300 900 300'/><polygon fill='#222' points='90 750 0 900 180 900'/><polygon points='270 750 180 900 360 900'/><polygon fill='#DDD' points='270 750 360 600 180 600'/><polygon points='450 750 540 600 360 600'/><polygon points='630 750 540 900 720 900'/><polygon fill='#444' points='630 750 720 600 540 600'/><polygon fill='#AAA' points='810 750 720 900 900 900'/><polygon fill='#666' points='810 750 900 600 720 600'/><polygon fill='#999' points='990 750 900 900 1080 900'/><polygon fill='#999' points='180 0 90 150 270 150'/><polygon fill='#444' points='360 0 270 150 450 150'/><polygon fill='#FFF' points='540 0 450 150 630 150'/><polygon points='900 0 810 150 990 150'/><polygon fill='#222' points='0 300 -90 450 90 450'/><polygon fill='#FFF' points='0 300 90 150 -90 150'/><polygon fill='#FFF' points='180 300 90 450 270 450'/><polygon fill='#666' points='180 300 270 150 90 150'/><polygon fill='#222' points='360 300 270 450 450 450'/><polygon fill='#FFF' points='360 300 450 150 270 150'/><polygon fill='#444' points='540 300 450 450 630 450'/><polygon fill='#222' points='540 300 630 150 450 150'/><polygon fill='#AAA' points='720 300 630 450 810 450'/><polygon fill='#666' points='720 300 810 150 630 150'/><polygon fill='#FFF' points='900 300 810 450 990 450'/><polygon fill='#999' points='900 300 990 150 810 150'/><polygon points='0 600 -90 750 90 750'/><polygon fill='#666' points='0 600 90 450 -90 450'/><polygon fill='#AAA' points='180 600 90 750 270 750'/><polygon fill='#444' points='180 600 270 450 90 450'/><polygon fill='#444' points='360 600 270 750 450 750'/><polygon fill='#999' points='360 600 450 450 270 450'/><polygon fill='#666' points='540 600 630 450 450 450'/><polygon fill='#222' points='720 600 630 750 810 750'/><polygon fill='#FFF' points='900 600 810 750 990 750'/><polygon fill='#222' points='900 600 990 450 810 450'/><polygon fill='#DDD' points='0 900 90 750 -90 750'/><polygon fill='#444' points='180 900 270 750 90 750'/><polygon fill='#FFF' points='360 900 450 750 270 750'/><polygon fill='#AAA' points='540 900 630 750 450 750'/><polygon fill='#FFF' points='720 900 810 750 630 750'/><polygon fill='#222' points='900 900 990 750 810 750'/><polygon fill='#222' points='1080 300 990 450 1170 450'/><polygon fill='#FFF' points='1080 300 1170 150 990 150'/><polygon points='1080 600 990 750 1170 750'/><polygon fill='#666' points='1080 600 1170 450 990 450'/><polygon fill='#DDD' points='1080 900 1170 750 990 750'/></g></pattern></defs><rect x='0' y='0' fill='url(#a)' width='100%' height='100%'/><rect x='0' y='0' fill='url(#b)' width='100%' height='100%'/></svg>
+  */
+  computed: {
+    style: function style() {
+      var txt = this.blankColor ? "background-color: ".concat(this.blankColor) : '';
+
+      if (this.width) {
+        txt += "; width: ".concat(this.width);
+      }
+
+      if (this.height) {
+        txt += "; height: ".concat(this.height);
+      }
+
+      return txt;
+    }
+  },
+  data: function data() {
+    return {
+      divId: "img_".concat(uuid_uuid()),
+      observer: null,
+      imgSrc: this.src,
+      threshold: 0.1,
+      isLoading: true
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    if (!this.src) {
+      return;
+    } else if (this.lazy) {
+      //this.divId = `img_${uuid()}`;
+      //var ref = this.$refs[this.divId];
+      var ref = this.$el;
+      var options = {//root:this.$el,
+        //threshold: this.threshold
+      };
+      this.observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var image = entry.target;
+            image.src = image.dataset.src;
+            image.classList.remove("lazy");
+            _this.isLoading = false;
+
+            _this.observer.unobserve(ref); //this.$log(`Loaded ${image.dataset.src}`);
+
+          }
+        });
+      }, options);
+      this.observer.observe(ref);
+    } else {
+      this.$el.src = this.imgSrc;
     }
   }
 });
@@ -52315,8 +52459,8 @@ var UsImgvue_type_style_index_0_lang_scss_ = __webpack_require__("03c5");
 
 var UsImg_component = normalizeComponent(
   components_UsImgvue_type_script_lang_js_,
-  UsImgvue_type_template_id_1361e520_render,
-  UsImgvue_type_template_id_1361e520_staticRenderFns,
+  UsImgvue_type_template_id_178846ac_render,
+  UsImgvue_type_template_id_178846ac_staticRenderFns,
   false,
   null,
   null,

@@ -96,17 +96,17 @@ module.exports = {
           title: 'Components',
           collapsable: false,
           children: [
-            'components/alert',
             'components/accordion',
+            'components/alert',
             'components/button',
             'components/card',
+            'components/image',
             //'components/footer',
             //'components/header',
             'components/lists',
             'components/modal',
             'components/progress',
             'components/step-indicator',
-            //'components/image',
             'components/table',
             'components/tabs',
             'components/tag'
@@ -137,6 +137,7 @@ module.exports = {
           collapsable: false,
           children: [
             'patterns/gov-banner',
+            //'patterns/footer',
             'patterns/left-nav',
             'patterns/banner'
           ]
