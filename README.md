@@ -16,13 +16,13 @@ The primary goal of this library is to document and provide common UI components
 
 Full docs can be found [here](https://thepipster.github.io/uswds-vue/)
 
-### A Bootstrap Theme for UWSWDS
+### A Bootstrap theme for UWSWDS
 
 Rather than use [USWDS](https://thepipster.github.io/uswds-vue/) as-is, the philopshy of this library is to create a [bootstrap](https://bootstrap-vue.org/) theme for [USWDS](https://thepipster.github.io/uswds-vue/) and then build components on top of that. Thus leveraging the immense amount of work that has gone into making Bootstrap work on every platform, everywhere. Not to mention it's 508 compliance.
 
 This approach is in full compliance of the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/). Indeed, combining the best-of-breed private sector technology such as [bootstrap](https://bootstrap-vue.org/) with the domain-specific design work of the USWDS team gives the best of both worlds - and is exactly what the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/) was trying to achieve.
 
-## Getting Help & Contributing
+## Getting help & contributing
 
 If you need help you can find me on Twitter at @MikeJPritchard. Please just ping me to let me know you're using this. If I know people are using this, then I'll be more active building and supporting it! 
 
