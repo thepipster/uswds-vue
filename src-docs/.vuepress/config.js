@@ -10,7 +10,7 @@ module.exports = {
   dest: './docs',
 
   /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
+   * Ref：https://v2.vuepress.vuejs.org/config/#title
    */
   title: 'USWDS-Vue',
   
@@ -49,13 +49,14 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
+    //repo: '',
+    //editLinks: false,
+    darkMode: true,
     home: '/uswds-vue/',
-    docsDir: '/docs',
-    editLinkText: '',
-    lastUpdated: 'Last Updated', // string | boolean,    
-    sidebarDepth: 1,
+    //docsDir: './src-docs',
+    //editLinkText: '',
+    //lastUpdated: 'Last Updated', // string | boolean,    
+    sidebarDepth: 2,
     nav: [
       {
         text: 'Guide',
@@ -77,14 +78,14 @@ module.exports = {
     sidebar: {
       '/guide/': [
         {
-          title: 'Guide',
+          text: 'Guide',
           collapsable: false,
           children: [
             ''
           ]
         },
         { 
-          title: 'Utils',
+          text: 'Utils',
           collapsable: false,
           children: [
             'utils/breakpoints',
@@ -97,7 +98,7 @@ module.exports = {
           ]
         },       
         {
-          title: 'Components',
+          text: 'Components',
           collapsable: false,
           children: [
             'components/alert',
@@ -117,7 +118,7 @@ module.exports = {
           ]
         },       
         {
-          title: 'Forms',
+          text: 'Forms',
           collapsable: false,
           children: [
             'forms/form',
@@ -137,7 +138,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Patterns',
+          text: 'Patterns',
           collapsable: false,
           children: [
             'patterns/gov-banner',
@@ -147,13 +148,5 @@ module.exports = {
         },           
       ],
     }
-  },
-
-  /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-   */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom'
-  ]
+  }
 }

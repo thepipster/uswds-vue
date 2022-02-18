@@ -4,9 +4,12 @@ home: true
 heroImage: ./usds-logo-footer.svg
 tagline: Vue.js components the implement the awesome U.S. Web Design Standards.
 actions:
-  - text: Quick Start →
+  - text: Get Started
     link: /guide/getting-started.html
-    type: primary    
+    type: primary
+  - text: Introduction
+    link: /guide/
+    type: secondary
 features:
 - title: Simplicity First
   details: Adopting common sense defaults to make bootstraping your project using the U.S. Web Design Standards nice and simple!
@@ -15,5 +18,5 @@ features:
 - title: US Web Design Standards
   details: USWDS provides principles, guidance, and code to help you design and build accessible, mobile-friendly government websites and digital services.
 footerHtml: true
-footer: "Made with ❤️ &nbsp; by <a href='https://github.com/mikepif' target='_blank'>Mike Pritchard</a> @ <a href='https://usds.gov' target='_blank'>USDS</a>"
+footer: "Made with ❤️ &nbsp; by <a href='https://github.com/thepipster' target='_blank'>Mike Pritchard</a>"
 ---

@@ -16,19 +16,25 @@ The primary goal of this library is to document and provide common UI components
 
 Full docs can be found [here](https://thepipster.github.io/uswds-vue/)
 
-### A Bootstrap theme for UWSWDS
+### A Bootstrap rheme for UWSWDS
 
 Rather than use [USWDS](https://thepipster.github.io/uswds-vue/) as-is, the philopshy of this library is to create a [bootstrap](https://bootstrap-vue.org/) theme for [USWDS](https://thepipster.github.io/uswds-vue/) and then build components on top of that. Thus leveraging the immense amount of work that has gone into making Bootstrap work on every platform, everywhere. Not to mention it's 508 compliance.
 
-This approach is in full compliance of the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/). Indeed, combining the best-of-breed private sector technology such as [bootstrap](https://bootstrap-vue.org/) with the domain-specific design work of the USWDS team gives the best of both worlds - and is exactly what the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/) was trying to achieve.
+### Adherence to Federal requirements
+
+Please note that the [21st Century Integrated Digital Experience Act (P.L. 115-336 § 3(e))](https://www.congress.gov/bill/115th-congress/house-bill/5759/text) requires “any website of an executive agency that is made available to the public after the date of enactment of this Act shall be in compliance with the website standards of the Technology Transformation Services of the General Services Administration.” These standards can be found [here](https://digital.gov/resources/checklist-of-requirements-for-federal-digital-services/). TTS has chosen to *require* the the use of USWDS, I'm taking a liberal stance adopting the look and fill, usability and the 508 compliance guidance (which is a great resource!). That way, we don't have to reinvent the bootstraps of the world which is a huge undertaking (and the USWDS team is small).
+
+In my opinion, combining the best-of-breed private sector technology such as [bootstrap](https://bootstrap-vue.org/) with the domain-specific design work of the USWDS team gives the best of both worlds - and is exactly what the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/) was trying to achieve.
+
+## Similar libraries worth considering
+
+The USPTO has developed their own [Bootstrap themed approach](https://uspto.github.io/USPTO-Design-System/) to implement USWDS.
 
 ## Getting help & contributing
 
-If you need help you can find me on Twitter at @MikeJPritchard. Please just ping me to let me know you're using this. If I know people are using this, then I'll be more active building and supporting it! 
+If you need help, submit an issue or you can find me on Twitter at @MikeJPritchard. Please just DM me to let me know you're using this. If I know people are using this, then I'll be more active building and supporting it! 
 
 And even better, if you want to contribute let me know!
-
-
 
 ## Install
 

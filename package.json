@@ -18,8 +18,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev src-docs",
+    "docs:build": "vuepress build src-docs"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.0",
