@@ -24,10 +24,6 @@ Rather than use [USWDS](https://thepipster.github.io/uswds-vue/) as-is, the phil
 
 Please note that the [21st Century Integrated Digital Experience Act (P.L. 115-336 § 3(e))](https://www.congress.gov/bill/115th-congress/house-bill/5759/text) requires “any website of an executive agency that is made available to the public after the date of enactment of this Act shall be in compliance with the website standards of the Technology Transformation Services of the General Services Administration.” These standards can be found [here](https://digital.gov/resources/checklist-of-requirements-for-federal-digital-services/). 
 
-Unfortunately TTS has chosen to require the "the use of USWDS code". This is unfortunate because the small team (as good as they are) can't possibly create the design *and* implementation of a design system that is bug free and guaranteed to work on every platform, every where. That's just basic math, it would require a much larger budget and team, and it's foolish to force the entire federal government to adopt it. And indeed, the few agencies using USWDS have chosen their own implementations exactly for this reason.
-
-In my opinion, combining the best-of-breed private sector technology such as [bootstrap](https://bootstrap-vue.org/) with the domain-specific design work of the USWDS team gives the best of both worlds - and is exactly what the [21st Century IDEA act](https://digital.gov/topics/21st-century-idea/) was trying to achieve.
-
 ## Similar libraries worth considering
 
 The USPTO has developed their own [Bootstrap themed approach](https://uspto.github.io/USPTO-Design-System/) to implement USWDS.
