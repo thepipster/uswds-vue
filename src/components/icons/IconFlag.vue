@@ -30,10 +30,7 @@
 </template>
 
 <script>
-import UsIcon from './UsIcon';
-
 export default {
-    name: 'icon-flag-small',
-    component: { UsIcon }
+    name: 'icon-flag-small'
 };
 </script>

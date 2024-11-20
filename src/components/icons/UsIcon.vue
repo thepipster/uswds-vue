@@ -10,10 +10,10 @@
     </svg>
 </template>
 <script>
-import IconFlag from './IconFlag';
-import IconDotGov from './IconDotGov';
-import IconHttps from './IconHttps';
-import IconLock from './IconLock';
+import IconFlag from './IconFlag.vue';
+import IconDotGov from './IconDotGov.vue';
+import IconHttps from './IconHttps.vue';
+import IconLock from './IconLock.vue';
 
 export default {
     components: {

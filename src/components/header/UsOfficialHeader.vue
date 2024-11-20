@@ -1,8 +1,8 @@
 <template>
-        
-       
+
+
         <header class="usx-component usx-banner" aria-label="Official government website" :class="`bg-${variant}`">
-            
+
             <us-container>
 
                 <p class="usx-banner-text">
@@ -14,7 +14,7 @@
                         <i v-else class="fas fa-chevron-up"></i>
                     </span>
                 </p>
-                
+
 
                 <div class="mt-2" v-if="isOpen">
 
@@ -30,13 +30,13 @@
                             <icon-https class="usx-banner-icon"/>
                             <p class="usx-banner-info-text">
                                 <strong>Secure {{domain}} websites use HTTPS</strong><br />
-                                A <strong>lock</strong> (<i class="fas fa-lock"></i>) or <strong>https://</strong> means you’ve safely connected to the {{domain}} website. 
+                                A <strong>lock</strong> (<i class="fas fa-lock"></i>) or <strong>https://</strong> means you’ve safely connected to the {{domain}} website.
                                 Share sensitive information only on official, secure websites.
                             </p>
                         </us-col>
                     </us-row>
                 </div>
-            
+
             </us-container>
 
         </header>
@@ -46,57 +46,57 @@
 </template>
 
 <script>
-import IconFlag from '../icons/IconFlag.vue';
-import IconDotGov from '../icons/IconDotGov';
-import IconHttps from '../icons/IconHttps';
-import TranslateMixin from '../../mixins/translation/TranslateMixin';
+import IconFlag from "../icons/IconFlag.vue";
+import IconDotGov from "../icons/IconDotGov.vue";
+import IconHttps from "../icons/IconHttps.vue";
+import TranslateMixin from "../../mixins/translation/TranslateMixin";
 
 /**
  * USWDS component for official US government website header
  */
 export default {
-    name: 'us-official-header',
+    name: "us-official-header",
     components: {
         IconFlag,
         IconDotGov,
         IconHttps
     },
-    mixins: [TranslateMixin],        
+    mixins: [TranslateMixin],
     props: {
         variant: {
             type: String,
-            default: 'dark'
+            default: "dark"
         },
         fluid: {
             type: String,
-            default: 'none'
+            default: "none"
         },
         domain: {
             type: String,
-            default: '.gov'
+            default: ".gov"
         },
         locale: {
             type: String,
-            default: 'en' // 'es', 'es-XX'
-        },        
+            default: "en" // "es", "es-XX"
+        },
         translations: {
             type: Object,
             default(){
                 return {
                     en: {
-                        title: 'An official website of the United States government',
-                        subTitle: 'Official websites use',
-                        home_1: 'website belongs to an official government organization in the United States',
-                        link: 'Here’s how you know',
+                        title: "An official website of the United States government",
+                        subTitle: "Official websites use",
+                        home_1: "website belongs to an official government organization in the United States",
+                        link: "Here’s how you know",
                     },
                     es: {
-                        title: 'Un sitio oficial del Gobierno de Estados Unidos',
-                        subTitle: 'Los sitios web oficiales usan',
-                        home_1: 'pertenece a una organización oficial del Gobierno de Estados Unidos',
-                        link: 'Así es como usted puede verificarlo',
-                    }  
+                        title: "Un sitio oficial del Gobierno de Estados Unidos",
+                        subTitle: "Los sitios web oficiales usan",
+                        home_1: "pertenece a una organización oficial del Gobierno de Estados Unidos",
+                        link: "Así es como usted puede verificarlo",
+                    }
                 }
-            }                          
+            }
         }
     },
     mounted(){
@@ -109,10 +109,10 @@ export default {
     },
     watch: {
         locale(newVal){
-            this.$log('Locale changed to ', newVal);
+            this.$log("Locale changed to ", newVal);
             this.updateLocale(newVal);
         }
-    }   
+    }
 };
 </script>
 <style lang="scss">
@@ -136,7 +136,7 @@ export default {
     }
 
     .usx-banner-text {
-        
+
         margin-bottom: 0;
         margin-top: 0;
         font-size: .75rem;
@@ -172,7 +172,7 @@ export default {
 
 
 /*
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .usa-banner {
     .usa-banner__button-text,
@@ -193,19 +193,19 @@ export default {
     }
 
     &.fluid-sm {
-        max-width: map-get($grid-breakpoints, 'sm');
+        max-width: map-get($grid-breakpoints, "sm");
     }
 
     &.fluid-md {
-        max-width: map-get($grid-breakpoints, 'md');
+        max-width: map-get($grid-breakpoints, "md");
     }
 
     &.fluid-lg {
-        max-width: map-get($grid-breakpoints, 'lg');
+        max-width: map-get($grid-breakpoints, "lg");
     }
 
     &.fluid-xl {
-        max-width: map-get($grid-breakpoints, 'xl');
+        max-width: map-get($grid-breakpoints, "xl");
     }
 }
 

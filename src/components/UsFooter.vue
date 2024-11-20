@@ -109,7 +109,7 @@
                     <div class="grid-row grid-gap">
                         <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
                             <div class="mobile-lg:grid-col-auto">
-                                <img class="usa-footer__logo-img" src="/assets/img/logo-img.png" alt />
+                                <img class="usa-footer__logo-img" src="http://fillmurray.com/200/200" alt />
                             </div>
                             <div class="mobile-lg:grid-col-auto">
                                 <h3 class="usa-footer__logo-heading">Name of Agency</h3>
@@ -188,7 +188,7 @@
                     <div class="grid-row grid-gap">
                         <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
                             <div class="mobile-lg:grid-col-auto">
-                                <img class="usa-footer__logo-img" src="/assets/img/logo-img.png" alt />
+                                <img class="usa-footer__logo-img" src="http://fillmurray.com/200/200" alt />
                             </div>
                             <div class="mobile-lg:grid-col-auto">
                                 <h3 class="usa-footer__logo-heading">Name of Agency</h3>
@@ -282,7 +282,7 @@
                 <div class="grid-container">
                     <div class="usa-footer__logo grid-row grid-gap-2">
                         <div class="grid-col-auto">
-                            <img class="usa-footer__logo-img" src="/assets/img/logo-img.png" alt />
+                            <img class="usa-footer__logo-img" src="http://fillmurray.com/200/200" alt />
                         </div>
                         <div class="grid-col-auto">
                             <h3 class="usa-footer__logo-heading">Name of Agency</h3>

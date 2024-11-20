@@ -44,9 +44,9 @@ export default {
 <style lang="scss">
 
 //$accordion-border-color: red;
-// $theme-accordion-border-width 
+// $theme-accordion-border-width
 
-@import "~bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap.scss";
 @import "../../styles/a11y-color.scss";
 
 
@@ -62,21 +62,21 @@ export default {
 
         &.accordion-#{$variant}{
 
-            &:not(.accordion-flush){ 
+            &:not(.accordion-flush){
                 .accordion-body {
                     border-left: 5px solid $color;
                     border-right: 5px solid $color;
                     border-bottom: 5px solid $color;
-                }                
+                }
             }
 
             .accordion-button {
                 background-color: $color;
-                color: color-contrast($color) !important; // choose-contrast-color($colorLight) 
-            }                   
+                color: color-contrast($color) !important; // choose-contrast-color($colorLight)
+            }
         }
 
-      
+
     }
 
     .accordion-item {
@@ -105,7 +105,7 @@ export default {
 
     &:not(.accordion-flush){
 
-        .accordion-item { 
+        .accordion-item {
             margin-top: 10px;
         }
 

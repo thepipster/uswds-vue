@@ -1,5 +1,3 @@
-import Vue from 'vue';
-const EVENT_BUS = new Vue();
 import Translate from './Translate';
 
 /**
@@ -34,10 +32,10 @@ export default {
             Translate.addTranslations(this.translations);
         }
 
-        
-    },  
-    directives: {   
-        t: {            
+
+    },
+    directives: {
+        t: {
             bind(el, binding, vnode) {
                 //console.log(">>> ", vnode.context.translations);
                 Translate._translateElement(el);
@@ -51,14 +49,14 @@ export default {
                 //watchers.push(el);
                 // do clean up work
                 // e.g. remove event listeners added in bind()
-            }            
+            }
         }
-    },        
+    },
     methods: {
 
         updateLocale(newLocale){
             Translate.setLocale(newLocale);
-            //EVENT_BUS.$emit('translate:change-locale');            
+            //EVENT_BUS.$emit('translate:change-locale');
         }
 
     }

@@ -1,8 +1,8 @@
-import Vue from 'vue';
+//import {Vue} from 'vue';
 import md5 from '../../utils/md5';
 import _ from 'lodash';
 
-const EVENT_BUS = new Vue();
+//const EVENT_BUS = new Vue();
 
 
 class Translate {
@@ -23,11 +23,11 @@ class Translate {
                 text1: 'Un mensaje en ingles'
             }
         };
-    
+
         // Finally, listen for locale changes
-        EVENT_BUS.$on('translate:change-locale', () => {            
-            this._update();
-        });          
+        //EVENT_BUS.$on('translate:change-locale', () => {
+        //    this._update();
+        //});
 
         this._generateIndex();
         this._update();
@@ -58,15 +58,15 @@ class Translate {
      */
     addTranslations(newMessages){
         for (let locale in newMessages){
-            
+
             for (let key in newMessages[locale]){
 
                 if (!this.messages[locale]){
                     this.messages[locale] = {};
                 }
-            
+
                 this.messages[locale][key] = newMessages[locale][key];
-                
+
             }
         }
 
@@ -97,7 +97,7 @@ class Translate {
         //this.msgHash = _.map(this.messages.en, 'txt');
 
         // Create hashmap for fast searching
-        
+
         this.msgHash = [];
         for (let key in this.messages.en) {
             this.msgHash[key] = {
@@ -108,8 +108,8 @@ class Translate {
         }
 
         //console.log(this.messages.en, this.msgHash)
-        
-            
+
+
         // Create indexed string lookup
         /*
         const opts = {
@@ -123,18 +123,18 @@ class Translate {
                 return a.score > b.score ? -1 : 1;
             }
         };
-    
+
         //console.log("MESSAGE HASH = ", this.msgHash);
 
         let index = Fuse.createIndex(opts.keys, this.msgHash);
-    
+
         // TODO: can load a pre-generated index if we have it!!!
         // @see https://fusejs.io/api/indexing.html
         //const fuseIndex = await require('fuse-index.json')
         //const myIndex = Fuse.parseIndex(fuseIndex)
         this.fuse = new Fuse(this.msgHash, opts, index);
         */
-      
+
     }
 
     // ///////////////////////////////////////////////////////////////////////////////////////
@@ -159,10 +159,10 @@ class Translate {
 
             if (!rawTxt){
                 return '';
-            }            
-            
+            }
+
             // Clean text
-            let txt = rawTxt.replace(/(\r\n|\n|\r)/gm, "").trim();  
+            let txt = rawTxt.replace(/(\r\n|\n|\r)/gm, "").trim();
 
             let key = findMessage(txt);
 
@@ -186,7 +186,7 @@ class Translate {
         for (var i = 0; i < el.children.length; i++) {
 
             //console.log(i, el.children[i], el.children[i].innerText);
-            
+
             let txt = el.children[i].innerText;
 
             if (txt){
@@ -194,7 +194,7 @@ class Translate {
                 // First, if we have already processed this element we would have put
                 // a translate key on it, lets check it
                 if (el.dataset.translateKey){
-                    
+
                     // Did we add the key, but had no translation? Then lets look
                     // again, but only if the locale is still the default locale (en)
                     if (this.locale == 'en' && el.dataset.translateKey.indexOf('no-data') != -1){
@@ -226,8 +226,8 @@ class Translate {
                     // we get new translations (when a component mounts for example)
                     if (!el.dataset.translateKey){
                         let key = md5(txt);
-                        this.watchers[key] = el;   
-                        el.dataset.translateKey = `no-data:${key}`;  
+                        this.watchers[key] = el;
+                        el.dataset.translateKey = `no-data:${key}`;
                     }
 
                 }
@@ -235,14 +235,14 @@ class Translate {
                 //let matches = stringSimilarity.findBestMatch(txt, Object.keys(this.msgHash));
                 //console.log('txt = ', txt, matches);
 
-    
+
             }
 
 
         }
 
         //let txt = strip(el);
-        
+
 
 
 
@@ -279,12 +279,12 @@ class Translate {
         //if (key == 'no-data'){
         //    key = false;
         //}
-        
+
         if (str){
 
             console.log(`[${depth}] element txt = "${str}" , key = "${key}"   --  locale: ${this.locale}`);
 
-            // If there is a `translateKey` on this element, that means 
+            // If there is a `translateKey` on this element, that means
             // we have already translates it. So if we don't have that
             // key we need to translate it now
             if (key != 'data-translate-key' && str) {
@@ -294,9 +294,9 @@ class Translate {
                 el.dataset.translateKey = key;
                 // Start watching this element and update
                 this.watchers[key] = el;
-            } 
+            }
             else {
-                key = 'no-data';            
+                key = 'no-data';
             }
 
             if (key != 'no-match' && key != 'no-data') {
@@ -306,7 +306,7 @@ class Translate {
                 console.warn(`[${depth}] element txt = "${str}" , key = "${key}"   --  locale: ${this.locale}`);
                 console.warn(`No match for "${str}"`);
             }
-            
+
             //EVENT_BUS.$on('translate:change-locale', () => {
             //    console.log(`Changed locale to ${locale} for div ${key}`);
             //    if (el.dataset.translateKey != 'no-match') {
@@ -328,7 +328,7 @@ class Translate {
             }
         }
         */
-        
+
     }
 
 }
