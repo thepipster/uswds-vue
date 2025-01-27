@@ -1,12 +1,18 @@
 <template>
-    <div :class="['usx-component', 'row']" v-bind="$props">
+    <div :class="['usx-component', gutter ? `grid-gap-${gutter}` : '']">
         <slot></slot>
     </div>
 </template>
 
-<script>
+<script setup lang="ts">
 
-export default {
-    name: 'us-row'    
-};
+const props = defineProps<{
+    gutter: {
+        type: string, // 2px, 05, 1, 2, 3, 4, 5, 6
+        default: ''
+    }
+}>();
+
+
 </script>
+

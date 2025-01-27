@@ -1,5 +1,5 @@
-import comp from "/Users/mike/Projects/SSA/platform-web/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/footer.html.vue"
-const data = JSON.parse("{\"path\":\"/guide/patterns/footer.html\",\"title\":\"Official Footer\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Docs coming soon....\",\"slug\":\"docs-coming-soon\",\"link\":\"#docs-coming-soon\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"guide/patterns/footer.md\"}")
+import comp from "/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/guide/patterns/footer.html.vue"
+const data = JSON.parse("{\"path\":\"/guide/patterns/footer.html\",\"title\":\"Official Footer\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Docs coming soon....\",\"slug\":\"docs-coming-soon\",\"link\":\"#docs-coming-soon\",\"children\":[]}],\"git\":{\"updatedTime\":1732062443000,\"contributors\":[{\"name\":\"Mike Pritchard\",\"email\":\"mike@arsenicsoup.com\",\"commits\":2,\"url\":\"https://github.com/Mike Pritchard\"}]},\"filePathRelative\":\"guide/patterns/footer.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

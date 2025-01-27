@@ -1,9 +1,18 @@
-//import Logger from "./utils/Logger"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
+
+import KitchenSink from "./components/KitchenSink.vue";
+export {KitchenSink};
 
 import UsAlert from "./components/UsAlert.vue"
+import UsTag from "./components/UsTag.vue"
 
+import UsContainer from "./components/layout/UsContainer.vue"
+import UsRow from "./components/layout/UsRow.vue"
+import UsCol from "./components/layout/UsCol.vue"
+import UsOfficialHeader from "./components/header/UsOfficialHeader.vue"
+
+/*
 import UsAccordion from "./components/accordion/UsAccordion.vue"
 import UsAccordionItem from "./components/accordion/UsAccordionItem.vue"
 import UsCard from "./components/cards/UsCard.vue"
@@ -19,6 +28,7 @@ import UsFormDate from "./components/form/UsFormDate.vue"
 import UsFormRadio from "./components/form/UsFormRadio.vue"
 import UsFormBoolean from "./components/form/UsFormBoolean.vue"
 import UsFormCheckbox from "./components/form/UsFormCheckbox.vue"
+
 import UsStepIndicator from "./components/form/UsStepIndicator.vue"
 import UsButton from "./components/UsButton.vue"
 import UsButtonGroup from "./components/UsButtonGroup.vue"
@@ -32,10 +42,6 @@ import UsHeaderNav from "./components/header/UsHeaderNav.vue"
 import UsSideNavItem from "./components/side-nav/UsSideNavItem.vue"
 import UsSideNav from "./components/side-nav/UsSideNav.vue"
 import UsHeaderBrand from "./components/header/UsHeaderBrand.vue"
-import UsOfficialHeader from "./components/header/UsOfficialHeader.vue"
-import UsContainer from "./components/layout/UsContainer.vue"
-import UsRow from "./components/layout/UsRow.vue"
-import UsCol from "./components/layout/UsCol.vue"
 import UsTab from "./components/tabs/UsTab.vue"
 import UsTabs from "./components/tabs/UsTabs.vue"
 import UsListGroup from "./components/lists/UsListGroup.vue"
@@ -93,14 +99,6 @@ export const Components = {
   UsProgress,
 }
 
-/**
- * Install function to enable global install;
- * import { UswdsVue } from "uswds-vue";
- * Vue.use(UswdsVue);
- *
- * @param {*} Vue
- * @param {*} config
- */
 const UswdsVue = {
   install(Vue, _config: object = {}) {
     //if (document){
@@ -131,3 +129,4 @@ if (typeof window !== "undefined" && window.Vue) {
 // Export utils
 import Validator from "./utils/Validator"
 export { Validator }
+*/

@@ -1,5 +1,5 @@
-import comp from "/Users/mike/Projects/SSA/platform-web/uswds-vue/docs/.vuepress/.temp/pages/guide/utils/colors.html.vue"
-const data = JSON.parse("{\"path\":\"/guide/utils/colors.html\",\"title\":\"Colors and Theming\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Variants\",\"slug\":\"variants\",\"link\":\"#variants\",\"children\":[]},{\"level\":2,\"title\":\"Theme Playground\",\"slug\":\"theme-playground\",\"link\":\"#theme-playground\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"guide/utils/colors.md\"}")
+import comp from "/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/guide/utils/colors.html.vue"
+const data = JSON.parse("{\"path\":\"/guide/utils/colors.html\",\"title\":\"Colors and Theming\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Variants\",\"slug\":\"variants\",\"link\":\"#variants\",\"children\":[]},{\"level\":2,\"title\":\"Theme Playground\",\"slug\":\"theme-playground\",\"link\":\"#theme-playground\",\"children\":[]}],\"git\":{\"updatedTime\":1732062443000,\"contributors\":[{\"name\":\"Mike Pritchard\",\"email\":\"mike@arsenicsoup.com\",\"commits\":2,\"url\":\"https://github.com/Mike Pritchard\"}]},\"filePathRelative\":\"guide/utils/colors.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
