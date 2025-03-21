@@ -25,7 +25,7 @@ import UsStepIndicator from './components/form/UsStepIndicator.vue';
 
 import SsaLogo from './components/icons/SsaLogo.vue';
 
-const UswdsVue: Plugin = {
+export const UswdsVue: Plugin = {
     install: (app: App, options: any) => {
 
         //app.use(VueUswds)
@@ -68,5 +68,3 @@ const UswdsVue: Plugin = {
 // Export type4s
 export {type UsInputProps, type UsValidationRule} from "./components/form/FormTypes";
 
-// Export main library
-export default UswdsVue;
