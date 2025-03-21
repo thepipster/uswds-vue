@@ -9,6 +9,6 @@
 </template>
 <script setup lang="ts">
 
-const props = defineProps<{size: string}>();
+const props = defineProps<{size?: string}>();
 
 </script>

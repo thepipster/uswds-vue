@@ -10,7 +10,7 @@
 <h2 id="default-values" tabindex="-1"><a class="header-anchor" href="#default-values"><span>Default Values</span></a></h2>
 <p>The default values are shown in the following <em>sass</em> code. You can change these value by overriding in your own sass, but make sure you include those new values before you import the <strong>USWDS-Vue</strong> styles.
 Here we are simplu mapping the existing USWDS breakpoints to the new ones. And note the breakpoint <code v-pre>xs</code> is just a default that covers everything from a screen size of 0 up t the first breakpoint (<code v-pre>sm</code>) to give complete coverage.</p>
-<div class="language-sass line-numbers-mode" data-highlighter="prismjs" data-ext="sass" data-title="sass"><pre v-pre><code><span class="line"><span class="token comment">// The uswds breakpoints</span></span>
+<div class="language-sass line-numbers-mode" data-highlighter="prismjs" data-ext="sass"><pre v-pre><code><span class="line"><span class="token comment">// The uswds breakpoints</span></span>
 <span class="line"><span class="token variable-line"><span class="token variable">$theme-utility-breakpoints</span><span class="token punctuation">:</span> (</span></span>
 <span class="line"><span class="token property-line">  <span class="token property">'card'</span><span class="token punctuation">:</span> 160px,</span></span>
 <span class="line"><span class="token property-line">  <span class="token property">'card-lg'</span><span class="token punctuation">:</span> 240px,</span></span>

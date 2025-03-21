@@ -1,15 +1,65 @@
----
-home: true
-heroImage: ./usds-logo-footer.svg
-tagline: Vue.js components the implement the awesome U.S. Web Design Standards.
-actionText: Quick Start →
-actionLink: /guide/
-features:
-  - title: Simplicity First
-    details: Adopting common sense defaults to make bootstraping your project using the U.S. Web Design Standards nice and simple!
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, using Vue components to make your life easier and build super fast websites.
-  - title: US Web Design Standards
-    details: USWDS provides principles, guidance, and code to help you design and build accessible, mobile-friendly government websites and digital services.
-footerHtml: "Made with ❤️ &nbsp; by <a href='https://github.com/mikepif' target='_blank'>Mike Pritchard</a> @ <a href='https://usds.gov' target='_blank'>USDS</a>"
----
+# Introduction
+
+Vue USWDS component library
+
+This is a front end component library whose aim is to develop [Vue.js](https://vuejs.org/) implementations of the design patterns defined by the [United States Web Design System (USWDS)](https://designsystem.digital.gov/). 
+
+The primary goal of this library is to document and provide common UI components that can be included in other projects that adhere to or are based off of the USWDS, removing a significant amount of overhead UI development from such projects.
+
+This library attempts to follow the conventions laid down by [Bootstrap](https://getbootstrap.org/), as these seem entirely sensible!
+
+## Install
+
+To install, you need to add `uswds-vue` itself and addiationally you'll need the `uswds` styles (but not the `uswds` javascript).
+
+``` bash
+
+# With yarn
+yarn add bootstrap
+yarn add uswds-vue 
+
+# With npm
+npm i bootstrap
+npm i uswds-vue
+```
+
+Then you can import globally (for example in your `main.js` file);
+
+``` js
+
+// Import bootstrap, or import in your head for SSR builds
+import 'bootstrap'
+
+// Import the vue component library
+import { UswdsVue } from 'uswds-vue';
+Vue.use(UswdsVue);
+
+// Or import individual components, e.g.;
+import { UsCard } from 'uswds-vue';
+Vue.use(UsCard);
+
+```
+
+To impoprt the `uswds` styles, you can add this to you `index.html` file;
+
+```html
+<link rel="stylesheet" href="~uswds/dist/css/uswds-vue.min.css">
+```
+
+Or in your sass files;
+
+```scss
+@import "~uswds-vue/dist/uswds-vue.css";
+```
+
+## Customize with SASS
+
+Support for SASS is baked in. To use, import the scss style sheets from `USWDS` and `uswds-vue`;
+
+```scss
+@import "~uswds-vue/src/styles/uswds-vue.scss";
+```
+
+## Fontawesome
+
+`uswds-vue` makes use of, and includes, the free version of [fontawesome](https://fontawesome.com/), future versions will include the ability to decouple to decrease the build size.

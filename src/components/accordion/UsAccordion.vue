@@ -47,7 +47,7 @@ export default {
 // $theme-accordion-border-width
 
 @import "bootstrap/scss/bootstrap.scss";
-@import "../../styles/a11y-color.scss";
+//@import "../../styles/a11y-color.scss";
 
 
 .usx-component.accordion {

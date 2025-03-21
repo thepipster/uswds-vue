@@ -1,9 +1,8 @@
 export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
-  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":""} }],
+  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Introduction"} }],
   ["/config/", { loader: () => import(/* webpackChunkName: "config_index.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/config/index.html.js"), meta: {"title":"Config"} }],
-  ["/guide/", { loader: () => import(/* webpackChunkName: "guide_index.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/guide/index.html.js"), meta: {"title":"Introduction"} }],
   ["/guide/components/accordion.html", { loader: () => import(/* webpackChunkName: "guide_components_accordion.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/guide/components/accordion.html.js"), meta: {"title":"Accordion"} }],
   ["/guide/components/alert.html", { loader: () => import(/* webpackChunkName: "guide_components_alert.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/guide/components/alert.html.js"), meta: {"title":"Alert"} }],
   ["/guide/components/badge.html", { loader: () => import(/* webpackChunkName: "guide_components_badge.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/guide/components/badge.html.js"), meta: {"title":"Badges & Pills"} }],
@@ -45,6 +44,7 @@ export const routes = Object.fromEntries([
   ["/guide/forms/form-inputs/form-time.html", { loader: () => import(/* webpackChunkName: "guide_forms_form-inputs_form-time.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/guide/forms/form-inputs/form-time.html.js"), meta: {"title":"Time Picker"} }],
   ["/guide/forms/form-inputs/masked-input.html", { loader: () => import(/* webpackChunkName: "guide_forms_form-inputs_masked-input.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/guide/forms/form-inputs/masked-input.html.js"), meta: {"title":"Masked Input"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
+  ["/introduction.html", { loader: () => import(/* webpackChunkName: "introduction.html" */"/Users/mike/Projects/SSA/uswds-vue/docs/.vuepress/.temp/pages/introduction.html.js"), meta: {"title":"Introduction"} }],
 ]);
 
 if (import.meta.webpackHot) {

@@ -1,0 +1,102 @@
+
+// $theme-header-font-family        Font family of the header.
+// $theme-header-logo-text-width    Width of the logo text area at desktop width as a percentage of the total header width.
+// $theme-header-max-width          Maximum width of the header.
+// $theme-header-min-width          Breakpoint at which the non-mobile header is shown.
+
+.usa-header {
+        
+    font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    background-color: #0b4778;
+    color: white;
+
+    //@media (min-width: 64em) {
+    //    .usa-nav__primary-item {
+    //        font-size: .88rem;
+    //        line-height: 1;
+    //    }
+    //}
+
+    .usa-nav__submenu-item {
+        a {
+            color: #005ea2 !important;
+            &:hover {
+                text-decoration: underline;
+                color: #39215e !important;
+            }
+            &.usa-current {
+                text-decoration: underline;
+                color: #39215e !important;
+            }    
+
+        }      
+    }
+
+    .usa-nav__primary-item {
+        a, a:hover  {
+            color: white;
+        }
+    }
+
+    .usa-nav__primary-item {
+        
+        @media (min-width: 64em) {
+            .usa-nav__link:hover::after, .usa-current::after {
+                height: 0;
+            }
+        }        
+
+        button[aria-expanded=false] span::after {
+            background-color: white;
+        }
+
+        button[aria-expanded=true] span::after {
+            background-color: #005ea2;
+        }        
+
+        button[aria-expanded=true] {
+            color: #112f4e;            
+            background-color: #e8f5ff;
+        }
+
+        .usa-nav__submenu {
+            background-color: #e8f5ff;            
+        }        
+
+        :focus {
+            //outline: 0.25rem solid red;
+            //outline-offset: 0rem;            
+            outline: none;
+        }
+
+        .usa-nav__link, button {
+            color: white;
+        }
+        
+        &:active {
+            text-decoration: none;
+            //background-color: #e8f5ff;
+        }
+
+        //.usa-current a, a:active {
+        //    color: #112f4e; 
+        //}
+
+        .usa-current {
+            //background-color: #e8f5ff;
+            -webkit-text-decoration: underline .25rem #2491ff;
+            text-decoration: underline .25rem #2491ff;
+            text-underline-offset: .25rem
+        }
+
+        &:hover, .usa-nav__link:hover {
+            -webkit-text-decoration: underline .25rem #2491ff;
+            text-decoration: underline .25rem #2491ff;
+            text-underline-offset: .25rem;            
+        }        
+        
+
+    }
+
+
+}

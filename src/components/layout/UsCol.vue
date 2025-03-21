@@ -8,44 +8,22 @@
 
 import { computed } from 'vue'
 
-const props = defineProps<{
-    sm: {
-        type: number // [1-12]
-        default: null
-    }
-    md: {
-        type: number // [1-12]
-        default: null
-    }
-    lg: {
-        type: number // [1-12]
-        default: null
-    }
-    xl: {
-        type: number // [1-12]
-        default: null
-    }
-    tablet: {
-        type: number // [1-12]
-        default: null
-    }
-    desktop: {
-        type: number // [1-12]
-        default: null
-    }
-    widescreen: {
-        type: number // [1-12]
-        default: null
-    }
-    fill: {
-        type: boolean
-        default: false
-    }
-    auto: {
-        type: boolean
-        default: false
-    }
-}>()
+export type UsColProps = {
+	sm?: number, // [1-12]
+	md?: number, // [1-12]
+	lg?: number, // [1-12]
+	xl?: number, // [1-12]
+	tablet?: number, // [1-12]
+	desktop?: number, // [1-12]
+	widescreen?: number, // [1-12]
+	fill?: boolean,
+	auto?: boolean
+}
+
+const props = withDefaults(defineProps<UsColProps>(), {
+	fill: false
+});
+
 
 // a computed ref
 const colClass = computed(() => {
@@ -77,6 +55,7 @@ const colClass = computed(() => {
     else if (props.xl) {
         return `widescreen:grid-col-${props.xl}`;
     }
+	return 'tablet:grid-col';
 
 })
 

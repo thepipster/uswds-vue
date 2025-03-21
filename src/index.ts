@@ -1,132 +1,72 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
+import type { App, Plugin } from 'vue';
 
-import KitchenSink from "./components/KitchenSink.vue";
-export {KitchenSink};
+//import VueUswds from 'vue-uswds/core' // Import only the core library.
+//import VueUswds from 'vue-uswds';
 
-import UsAlert from "./components/UsAlert.vue"
-import UsTag from "./components/UsTag.vue"
+//import KitchenSink from './components/KitchenSink.vue'
+import UsContainer from './components/layout/UsContainer.vue';
+import UsRow from './components/layout/UsRow.vue';
+import UsCol from './components/layout/UsCol.vue';
+import UsOfficialHeader from './components/header/UsOfficialHeader.vue'
+import UsHeader from './components/header/UsHeader.vue'
+import UsSideNav from './components/side-nav/UsSideNav.vue';
+import UsCard from './components/UsCard.vue';
+import UsTag from './components/UsTag.vue';
+import UsAlert from './components/UsAlert.vue';
+import UsButton from './components/UsButton.vue';
+import UsForm from './components/form/UsForm.vue';
+import UsFormGroup from './components/form/UsFormGroup.vue';
+import UsInput from './components/form/inputs/UsInput.vue';
+import UsComboBox from './components/form/inputs/UsComboBox.vue';
+import UsCheckbox from './components/form/inputs/UsCheckbox.vue';
+//import UsFormAddress from './components/form/UsFormAddress.vue';
 
-import UsContainer from "./components/layout/UsContainer.vue"
-import UsRow from "./components/layout/UsRow.vue"
-import UsCol from "./components/layout/UsCol.vue"
-import UsOfficialHeader from "./components/header/UsOfficialHeader.vue"
+import UsStepIndicator from './components/form/UsStepIndicator.vue';
 
-/*
-import UsAccordion from "./components/accordion/UsAccordion.vue"
-import UsAccordionItem from "./components/accordion/UsAccordionItem.vue"
-import UsCard from "./components/cards/UsCard.vue"
-import UsForm from "./components/form/UsForm.vue"
-import UsFormInput from "./components/form/UsFormInput.vue"
-import UsFormInputMasked from "./components/form/UsFormInputMasked.vue"
-import UsFormTextarea from "./components/form/UsFormTextarea.vue"
-import UsFormGroup from "./components/form/UsFormGroup.vue"
-import UsFormCombobox from "./components/form/UsFormCombobox.vue"
-import UsFormDate from "./components/form/UsFormDate.vue"
-//import UsFormDateRange from "./components/form/UsFormDateRange.vue"
-//import UsFormDatePicker from "./components/form/UsFormDatePicker.vue"
-import UsFormRadio from "./components/form/UsFormRadio.vue"
-import UsFormBoolean from "./components/form/UsFormBoolean.vue"
-import UsFormCheckbox from "./components/form/UsFormCheckbox.vue"
+import SsaLogo from './components/icons/SsaLogo.vue';
 
-import UsStepIndicator from "./components/form/UsStepIndicator.vue"
-import UsButton from "./components/UsButton.vue"
-import UsButtonGroup from "./components/UsButtonGroup.vue"
-//import UsButtonGroup from "./components/UsButtonGroup.vue"
-import UsBadge from "./components/UsBadge.vue"
-import UsImg from "./components/UsImg.vue"
-import UsHeader from "./components/header/UsHeader.vue"
-import UsFooter from "./components/UsFooter.vue"
-import UsNavItem from "./components/header/UsNavItem.vue"
-import UsHeaderNav from "./components/header/UsHeaderNav.vue"
-import UsSideNavItem from "./components/side-nav/UsSideNavItem.vue"
-import UsSideNav from "./components/side-nav/UsSideNav.vue"
-import UsHeaderBrand from "./components/header/UsHeaderBrand.vue"
-import UsTab from "./components/tabs/UsTab.vue"
-import UsTabs from "./components/tabs/UsTabs.vue"
-import UsListGroup from "./components/lists/UsListGroup.vue"
-import UsListGroupItem from "./components/lists/UsListGroupItem.vue"
-import UsTable from "./components/UsTable.vue"
-import UsModal from "./components/UsModal.vue"
-import UsProgress from "./components/UsProgress.vue"
+const UswdsVue: Plugin = {
+    install: (app: App, options: any) => {
 
-// Debug components
-import UsResponsiveInfo from "./components/debug/UsResponsiveInfo.vue"
+        //app.use(VueUswds)
 
-export const Components = {
-  UsAlert,
+        // Layout components
+        app.component('UsContainer', UsContainer);
+        app.component('UsRow', UsRow);
+        app.component('UsCol', UsCol);
+        app.component('UsOfficialHeader', UsOfficialHeader);
+        app.component('UsHeader', UsHeader);
+        app.component('UsSideNav', UsSideNav);
+        app.component('UsCard', UsCard);
 
-  UsAccordion,
-  UsAccordionItem,
-  UsSideNav,
-  UsSideNavItem,
-  UsRow,
-  UsCol,
-  UsTab,
-  UsTabs,
-  UsBadge,
-  UsTag: UsBadge,
-  UsCard,
-  UsButton,
-  UsButtonGroup,
-  UsForm,
-  UsFormInput,
-  UsFormInputMasked,
-  UsFormTextarea,
-  UsFormGroup,
-  UsFormCombobox,
-  UsFormSelect: UsFormCombobox,
-  UsFormCheckbox,
-  UsFormRadio,
-  UsFormDate,
-  //UsFormDatePicker,
-  //UsFormDateRange,
-  UsFormBoolean,
-  UsImg,
-  UsHeader,
-  UsNavItem,
-  UsHeaderNav,
-  UsContainer,
-  UsOfficialHeader,
-  UsHeaderBrand,
-  UsFooter,
-  UsResponsiveInfo,
-  UsListGroup,
-  UsListGroupItem,
-  UsStepIndicator,
-  UsTable,
-  UsModal,
-  UsProgress,
+        // Basic components
+        app.component('UsTag', UsTag);
+        app.component('UsAlert', UsAlert);
+        app.component('UsButton', UsButton);
+
+        // Forms
+		app.component('UsStepIndicator', UsStepIndicator);
+        app.component('UsForm', UsForm);
+        app.component('UsFormGroup', UsFormGroup);
+        app.component('UsInput', UsInput);
+        app.component('UsComboBox', UsComboBox);
+        app.component('UsCheckbox', UsCheckbox);
+
+        // SSA Specific
+        app.component('SsaLogo', SsaLogo);
+
+
+        //app.config.globalProperties.$translation = (key: string) => {
+        //    const keys = key.split('.')
+        //    return keys.reduce((o: any, i) => {
+        //        if (o) return o[i]
+        //    }, options)
+        //}
+    },
 }
 
-const UswdsVue = {
-  install(Vue, _config: object = {}) {
-    //if (document){
-    //    require("bootstrap");
-    // }
+// Export type4s
+export {type UsInputProps, type UsValidationRule} from "./components/form/FormTypes";
 
-    //if (!Vue.$log) {
-    //  Vue.use(Logger)
-    // }
-
-    Object.keys(Components).forEach((name) => {
-      //console.log("REGISTERING COMPONENT: " + name)
-      Vue.component(name, Components[name])
-    })
-
-    //if (config.bootstrap) {
-    // Layer in bootstrap utility styles...
-    // }
-  },
-}
-
-export { UswdsVue }
-
-if (typeof window !== "undefined" && window.Vue) {
-  window.Vue.use(UswdsVue)
-}
-
-// Export utils
-import Validator from "./utils/Validator"
-export { Validator }
-*/
+// Export main library
+export default UswdsVue;
