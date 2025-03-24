@@ -4,13 +4,32 @@
  * ref：https://v1.vuepress.vuejs.org/config/#index-styl
  */
 
-// @import "./reset.css";
+//@import "./reset.css";
 
-//@import url("../../styles/uswds/uswds.scss");
-@import "@uswds/uswds/css/uswds.css";
+/*
+[vp-content] {
+    h1, h2, h3, h4, h5, h6 {
+        all: unset;
+    }
+    * {
+        all: unset;
+    }    
+}
+*/
+
+// Reset any whacky styles on the whole vp-content element
+[vp-content] h1:first-child + p, [vp-content] h1:first-child + pre, [vp-content] h1:first-child + .custom-container, [vp-content] h2:first-child + p, [vp-content] h2:first-child + pre, [vp-content] h2:first-child + .custom-container, [vp-content] h3:first-child + p, [vp-content] h3:first-child + pre, [vp-content] h3:first-child + .custom-container, [vp-content] h4:first-child + p, [vp-content] h4:first-child + pre, [vp-content] h4:first-child + .custom-container, [vp-content] h5:first-child + p, [vp-content] h5:first-child + pre, [vp-content] h5:first-child + .custom-container, [vp-content] h6:first-child + p, [vp-content] h6:first-child + pre, [vp-content] h6:first-child + .custom-container {
+    margin-top: inherit;
+}
+@import "./reset.scss";
+
+//https://cdnjs.com/libraries/uswds
+@import "https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/css/uswds.min.css";
+//@import "./uswds.min.css";
 @import "../../../src/styles/uswds-vue.scss";
 //@import url("../../../src//styles/uswds-3.11.0/scss/stylesheets/uswds.scss");
 //@forward "../../../src/styles/uswds-3.11.0/scss/stylesheets/uswds.scss";
+
 
 
 // Deal with clashes between vuepress and uswds
@@ -21,7 +40,6 @@ html[data-theme="dark"] {
         color: white;
     }
 }
-
 
 .usx-component {
     h1, h2 {

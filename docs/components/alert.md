@@ -102,48 +102,6 @@ export default {
 
 **<strong>**Understand the user’s context.** </strong>** Don’t include notifications that aren’t related to the user’s current goal.
 
-## Vanilla HTML
-
-And of course, as this component is built from Bootstrap you can just use vanilla html if you like.
-
-<div class="usx-component alert alert-info" role="alert">
-  A simple primary alert—check it out!
-</div>
-
-<div class="usx-component alert alert-info d-flex align-items-center" role="alert">
-    <i class="fas fa-exclamation-triangle" ></i>
-    <div>A simple primary alert—check it out!</div>
-</div>
-
-<div class="usx-component alert alert-info d-flex align-items-start" role="alert">
-    <h4><i class="fas fa-exclamation-triangle"></i></h4>
-    <div>
-        <h4 class="p-0 m-0">Example Title</h4>
-        An example alert with an icon
-    </div>
-</div>
-
-
-```html
-<div class="alert alert-primary" role="alert">
-  A simple primary alert—check it out!
-</div>
-
-<div class="alert alert-primary d-flex align-items-start" role="alert">
-    <i class="fas fa-exclamation-triangle"></i>
-    <div>
-        An example alert with an icon
-    </div>
-</div>
-
-<div class="usx-component alert alert-info d-flex align-items-start" role="alert">
-    <h4><i class="fas fa-exclamation-triangle"></i></h4>
-    <div>
-        <h4 class="p-0 m-0">Example Title</h4>
-        An example alert with an icon
-    </div>
-</div>
-```
 
 ## Component Reference
 
@@ -155,25 +113,10 @@ And of course, as this component is built from Bootstrap you can just use vanill
 | -------- | ----- | ------- | ----------- | 
 | variant  | string | info | Applies one of the contextual color variants |
 | no-icon | boolean | false | When set, do not display a icon |
-| no-border | boolean | false | When set, no border is rendered | 
 | dismissible | boolean | false | When set, the modal will display a `x` button for dismissig the modal | 
-| size | string | lg | Specify the size, can be 'lg' or 'sm' |
 | title | string | none | Set a title for the alert |
 | show | boolean | true | Use to dynamically hide or show the alert |
-| time | number | null | If set, the alert will auto-dismiss after this many seconds |
-| show-countdown | boolean | false | If `time` is set, this will turn on a progress bar to show the countdown |
 
-### Events 
-
-| Name | Arguments | Description |
-| -------- | ----- | ------- | ----------- | 
-| is-dismissed  | none | Called when the alert is dismissed. |
-
-### Slots
-
-| Slot Name | Arguments | Description |
-| -------- | ----- | ------- | ----------- | 
-| title  | none | Content for the header slot |
 
 ### Further Reading
 

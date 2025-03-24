@@ -1,7 +1,10 @@
 import { defineClientConfig } from 'vuepress/client';
+//import { defineClientConfig } from "./theme-default-modified/client/index"
 import { UswdsVue } from '../../src/index';
-//import "../../src/styles/ssa-theme.scss";
-//import "@uswds/uswds/css/uswds.css";
+
+//import Layout from './layouts/Layout.vue'
+
+
 import "./styles/index.scss";
 
 export default defineClientConfig({
@@ -9,6 +12,9 @@ export default defineClientConfig({
     enhance({ app }) {
         app.use(UswdsVue)
     },
+    //layouts: {
+    //    Layout,
+    //},
     setup() {},
     rootComponents: [],
 })
