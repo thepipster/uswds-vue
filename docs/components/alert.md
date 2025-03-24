@@ -41,7 +41,7 @@ An alert keeps users informed of important and sometimes time-sensitive changes.
 
 For proper styling of `<us-alert>`, use one of the contextual variants by setting the variant prop to one of the following: info, success, warning or danger. The default is info.
 
-<span v-for="(variant,index) in ['info','primary','success','danger','warning']" :key="index">
+<span v-for="(variant,index) in ['info','success','warning', 'danger', 'emergency']" :key="index">
     <us-alert show :variant="variant" class="mb-0 mt-0">This is a <strong>{{variant}}</strong> message</us-alert><br/>
 </span>
 
