@@ -5,7 +5,6 @@
  */
 
 //@import "./reset.css";
-
 /*
 [vp-content] {
     h1, h2, h3, h4, h5, h6 {
@@ -15,14 +14,14 @@
         all: unset;
     }    
 }
-
+*/
 .vp-page [vp-content] {
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 2rem 2.5rem;
 }
 
-*/
+
 
 // Override the default content width
 :root {
@@ -33,6 +32,7 @@
 [vp-content] h1:first-child + p, [vp-content] h1:first-child + pre, [vp-content] h1:first-child + .custom-container, [vp-content] h2:first-child + p, [vp-content] h2:first-child + pre, [vp-content] h2:first-child + .custom-container, [vp-content] h3:first-child + p, [vp-content] h3:first-child + pre, [vp-content] h3:first-child + .custom-container, [vp-content] h4:first-child + p, [vp-content] h4:first-child + pre, [vp-content] h4:first-child + .custom-container, [vp-content] h5:first-child + p, [vp-content] h5:first-child + pre, [vp-content] h5:first-child + .custom-container, [vp-content] h6:first-child + p, [vp-content] h6:first-child + pre, [vp-content] h6:first-child + .custom-container {
     margin-top: inherit;
 }
+ 
 @import "./reset.scss";
 
 //https://cdnjs.com/libraries/uswds
@@ -52,7 +52,7 @@ html[data-theme="dark"] {
         color: white;
     }
 }
-
+/*
 .usx-component {
     h1, h2 {
         border: none;
@@ -79,3 +79,4 @@ div.theme-default-content:not(.custom), .page-edit, .page-nav {
     max-width: 450px !important;
 }
 
+*/

@@ -1,5 +1,6 @@
 import { viteBundler } from '@vuepress/bundler-vite';
-import { defaultTheme } from '@vuepress/theme-default';
+//import { defaultTheme } from '@vuepress/theme-default';
+import { defaultTheme } from "./theme-default-extended";
 import { defineUserConfig } from 'vuepress';
 import { sidebarConfig } from './sidenav';
 
