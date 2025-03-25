@@ -69,7 +69,8 @@ You can control which corners are rounded by setting the rounded prop to one of 
 * `bottom`: round the bottom corners
 * `left`: round the left corners
 * `circle`: make a circle (if square image) or oval (if not square) border
-* `0,1,2 or 3`: explicitly set the relative width of rounded corners. 0 removes them.
+* `0,1,2,3,4 or 5`: explicitly set the relative width of rounded corners. 0 removes them.
+* `top-0,right-1,left-2, etc.`: you can also mix and match the explicit size with position.
 
 <div class="mt-5 mus-5">
     <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded alt="Rounded image"></us-img>
@@ -79,10 +80,11 @@ You can control which corners are rounded by setting the rounded prop to one of 
     <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="left" alt="Left-rounded image"></us-img>
     <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="circle" alt="Circle image"></us-img>
     <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" alt="Not rounded image"></us-img>
-    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="sm" alt="Rounded sm"></us-img>
-    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="md" alt="Rounded md"></us-img>
-    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="lg" alt="Rounded lg"></us-img>
-    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="xl" alt="Rounded xl"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="1" alt="Rounded 1"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="2" alt="Rounded 2"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="3" alt="Rounded 3"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="4" alt="Rounded 4"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="5" alt="Rounded 5"></us-img>
 </div>
 
 ```vue
@@ -96,7 +98,9 @@ You can control which corners are rounded by setting the rounded prop to one of 
     <us-img v-bind="mainProps" rounded="0" alt="Not rounded image"></us-img>
     <us-img v-bind="mainProps" rounded="1" alt="Rounded 1"></us-img>
     <us-img v-bind="mainProps" rounded="2" alt="Rounded 2"></us-img>
-    <us-img v-bind="mainProps" rounded="3" alt="Rounded 32"></us-img>
+    <us-img v-bind="mainProps" rounded="3" alt="Rounded 3"></us-img>
+    <us-img v-bind="mainProps" rounded="4" alt="Rounded 4"></us-img>
+    <us-img v-bind="mainProps" rounded="5" alt="Rounded 5"></us-img>
 </div>
 <script>
 export default {
@@ -124,7 +128,7 @@ export default {
 | fluid | boolean | false | Make image responsive, i.e. max-width of 100% |
 | fluid-grow | boolean | false' | Make image responsive, but grow to maximum width |
 | rounded | boolean|string | false | Set rounded corners |
-| thumbnaill | boolean | false | Appy styles for thumbnail (set a border) |
+| thumbnail | boolean | false | Appy styles for thumbnail (set a border) |
 | blank-color | string | 'rgba(50,50,50,0.1)' | Set the background color when the image is blank |
 | lazy | boolean | false | Lazy load image |
 
