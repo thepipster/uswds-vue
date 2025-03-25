@@ -94,7 +94,7 @@ const classes = computed(() => {
         */
 
     }
-    else if (props.rounded == true) {
+    else if (props.rounded) {
         txt += ` rounded-${props.rounded}`;
     }
     return txt;
