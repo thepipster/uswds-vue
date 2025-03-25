@@ -72,16 +72,17 @@ You can control which corners are rounded by setting the rounded prop to one of 
 * `0,1,2 or 3`: explicitly set the relative width of rounded corners. 0 removes them.
 
 <div class="mt-5 mus-5">
-    <us-img v-bind="mainProps" rounded alt="Rounded image"></us-img>
-    <us-img v-bind="mainProps" rounded="top" alt="Top-rounded image"></us-img>
-    <us-img v-bind="mainProps" rounded="right" alt="Right-rounded image"></us-img>
-    <us-img v-bind="mainProps" rounded="bottom" alt="Bottom-rounded image"></us-img>
-    <us-img v-bind="mainProps" rounded="left" alt="Left-rounded image"></us-img>
-    <us-img v-bind="mainProps" rounded="circle" alt="Circle image"></us-img>
-    <us-img v-bind="mainProps" rounded="0" alt="Not rounded image"></us-img>
-    <us-img v-bind="mainProps" rounded="1" alt="Rounded 1"></us-img>
-    <us-img v-bind="mainProps" rounded="2" alt="Rounded 2"></us-img>
-    <us-img v-bind="mainProps" rounded="3" alt="Rounded 32"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded alt="Rounded image"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="top" alt="Top-rounded image"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="right" alt="Right-rounded image"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="bottom" alt="Bottom-rounded image"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="left" alt="Left-rounded image"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="circle" alt="Circle image"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" alt="Not rounded image"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="sm" alt="Rounded sm"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="md" alt="Rounded md"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="lg" alt="Rounded lg"></us-img>
+    <us-img v-bind="mainProps" class="m-2" :src="getRandomUrl(100, 100)" rounded="xl" alt="Rounded xl"></us-img>
 </div>
 
 ```vue

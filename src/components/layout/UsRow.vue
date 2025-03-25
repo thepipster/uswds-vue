@@ -10,7 +10,7 @@ export type UsRowProps = {
 	gutter?: string // 2px, 05, 1, 2, 3, 4, 5, 6
 }
 
-const props = withDefaults(defineProps<UsRowProps>(), {
+withDefaults(defineProps<UsRowProps>(), {
 	gutter: ''
 });
 

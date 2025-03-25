@@ -15,6 +15,7 @@ export type UsColProps = {
 	xl?: number, // [1-12]
 	tablet?: number, // [1-12]
 	desktop?: number, // [1-12]
+	tabletLg?: number, // [1-12]
 	widescreen?: number, // [1-12]
 	fill?: boolean,
 	auto?: boolean
@@ -38,6 +39,9 @@ const colClass = computed(() => {
         return `tablet:grid-col-${props.tablet}`;
     }
     else if (props.desktop) {
+        return `desktop:grid-col-${props.desktop}`;
+    }
+    else if (props.tabletLg) {
         return `desktop:grid-col-${props.desktop}`;
     }
     else if (props.widescreen) {

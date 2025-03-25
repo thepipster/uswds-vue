@@ -5,6 +5,7 @@ import type { App, Plugin } from 'vue';
 
 //import KitchenSink from './components/KitchenSink.vue'
 import UsContainer from './components/layout/UsContainer.vue';
+import UsImg from './components/UsImg.vue';
 import UsRow from './components/layout/UsRow.vue';
 import UsCol from './components/layout/UsCol.vue';
 import UsOfficialHeader from './components/header/UsOfficialHeader.vue'
@@ -55,6 +56,7 @@ export const UswdsVue: Plugin = {
         // SSA Specific
         app.component('SsaLogo', SsaLogo);
 
+        app.component('UsImg', UsImg);
 
         //app.config.globalProperties.$translation = (key: string) => {
         //    const keys = key.split('.')

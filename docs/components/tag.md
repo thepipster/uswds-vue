@@ -129,6 +129,19 @@ Use the pill prop to make tags more rounded (with a larger border-radius and add
 </div>
 ```
 
+## Component Reference
+
+### `<us-tag>`
+
+### Properties 
+
+| Property | Type  | Default | Description |
+| -------- | ----- | ------- | ----------- | 
+| variant  | string | info | Applies one of the contextual color variants |
+| pill | boolean | false | When set, display as a pill (rounded corners) |
+| size | string | '' | Support for normal size, or "big" |
+
+
 <script>
 export default {
     data() {

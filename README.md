@@ -41,9 +41,6 @@ npm i uswds-vue
 You can import globally;
 
 ```js
-// Import bootstrap, or import in your head for SSR builds
-import 'bootstrap'
-
 // And then import the vue component library
 import { UswdsVue } from 'uswds-vue';
 Vue.use(UswdsVue);

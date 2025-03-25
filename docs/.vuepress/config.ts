@@ -29,6 +29,7 @@ export default defineUserConfig({
               link: 'https://github.com/thepipster/uswds-vue'
             }
           ],
+        sidebarDepth: 1,
         sidebar: sidebarConfig
     }),
     lang: 'en-US',

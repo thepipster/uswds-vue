@@ -1,20 +1,36 @@
 <template>
-<div class="usa-card">
+<div class="usa-card"> <!-- tablet-lg:grid-col-6 widescreen:grid-col-4 -->
 	<div class="usa-card__container">
+
 		<div class="usa-card__header">
 			<h4 class="usa-card__heading" v-if="title">{{title}}</h4>
 		</div>
+
+        <div class="usa-card__media" v-if="imgSrc">
+            <div class="usa-card__img">
+                <us-img :src="imgSrc" :alt="imgAlt"/>
+            </div>
+        </div>
+
 		<div class="usa-card__body">
-			<slot></slot>
+			<slot>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                tenetur quo cupiditate, eaque qui officia recusandae.
+            </slot>
 		</div>
-		<!--
+
 		<div class="usa-card__footer">
-			<slot name="footer"/>
-			<a href="#" class="usa-button">Visit Florida Keys</a>
+			<slot name="footer">
+                <!-- <a href="#" class="usa-button">Visit Florida Keys</a> -->
+            </slot>
 		</div>
-		-->
+
 	</div>
 </div>
+
+
+
+
 
 	<!--
 
@@ -72,6 +88,8 @@
 </template>
 
 <script setup lang="ts">
+
+import UsImg from "./UsImg.vue";
 
 export type UsCardProps = {
 	title?: string,

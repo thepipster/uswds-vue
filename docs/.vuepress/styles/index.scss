@@ -15,7 +15,19 @@
         all: unset;
     }    
 }
+
+.vp-page [vp-content] {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+}
+
 */
+
+// Override the default content width
+:root {
+    --content-width: 1200px;
+}
 
 // Reset any whacky styles on the whole vp-content element
 [vp-content] h1:first-child + p, [vp-content] h1:first-child + pre, [vp-content] h1:first-child + .custom-container, [vp-content] h2:first-child + p, [vp-content] h2:first-child + pre, [vp-content] h2:first-child + .custom-container, [vp-content] h3:first-child + p, [vp-content] h3:first-child + pre, [vp-content] h3:first-child + .custom-container, [vp-content] h4:first-child + p, [vp-content] h4:first-child + pre, [vp-content] h4:first-child + .custom-container, [vp-content] h5:first-child + p, [vp-content] h5:first-child + pre, [vp-content] h5:first-child + .custom-container, [vp-content] h6:first-child + p, [vp-content] h6:first-child + pre, [vp-content] h6:first-child + .custom-container {
