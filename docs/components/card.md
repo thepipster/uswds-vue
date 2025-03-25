@@ -33,7 +33,7 @@ Set the `img-pos` prop to either `top` or `bottom` for vertical image placement.
         <us-col>
             <us-card 
                 title="Card with media" 
-                img-src="https://www.fillmurray.com/640/360"
+                img-src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
                 img-pos="bottom"
             >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis dolores molestias! Quas quisquam a officia eos.

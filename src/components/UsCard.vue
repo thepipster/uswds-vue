@@ -1,14 +1,20 @@
 <template>
-<div class="usa-card"> <!-- tablet-lg:grid-col-6 widescreen:grid-col-4 -->
+<div class="usx-component usa-card" :class="classes"> <!-- tablet-lg:grid-col-6 widescreen:grid-col-4 -->
 	<div class="usa-card__container">
 
 		<div class="usa-card__header">
 			<h4 class="usa-card__heading" v-if="title">{{title}}</h4>
 		</div>
 
-        <div class="usa-card__media" v-if="imgSrc">
+        <div class="usa-card__media" v-if="imgSrc && imgPos == 'top'">
             <div class="usa-card__img">
-                <us-img :src="imgSrc" :alt="imgAlt"/>
+                <us-img :src="imgSrc" :alt="imgAlt" :lazy-load="true"/>
+            </div>
+        </div>
+
+        <div class="usa-card__media usa-card__media--exdent" v-if="imgSrc && imgPos == 'bottom'">
+            <div class="usa-card__img">
+                <us-img :src="imgSrc" :alt="imgAlt" :lazy-load="true"/>
             </div>
         </div>
 
@@ -88,7 +94,7 @@
 </template>
 
 <script setup lang="ts">
-
+import { computed } from 'vue';
 import UsImg from "./UsImg.vue";
 
 export type UsCardProps = {
@@ -105,9 +111,38 @@ export type UsCardProps = {
 
 const props = withDefaults(defineProps<UsCardProps>(), {
 	imgInset: false,
+    imgPos: 'top',
 	overflow: false,
 	cardExdent: false
 });
+
+const classes = computed(() => {
+    return {
+        'usa-card--header-first': props.imgPos == 'bottom'
+        //'usa-card--exdent': props.cardExdent,
+        //'usa-card--img-inset': props.imgInset,
+        //'usa-card--overflow': props.overflow,
+    }
+    /*
+    'usx-component usa-card',
+    {
+        //'bg-primary': props.variant === 'primary',
+        'usa-button--base': props.variant === 'secondary' || props.variant === 'base',
+        'usa-button--accent-warm': props.variant === 'warning',
+        'bg-success': props.variant === 'success',
+        'usa-button--secondary': props.variant === 'danger',
+        'usa-button--accent-cool': props.variant === 'info' || props.variant === 'accent-cool',
+        'usa-button--accent-warm': props.variant === 'warning' || props.variant === 'accent-warm',
+        'usa-button--base': props.variant === 'base',
+        'usa-button--outline': props.variant === 'outline' || props.variant === 'inverse',
+        'usa-button--inverse': props.variant === 'inverse',
+        'usa-button--unstyled': props.variant === 'unstyled',
+        'usa-button--big': props.size === 'big',
+    },
+    */
+});
+
+
  /*
 import CoreMixin from '../../mixins/CoreMixin';
 

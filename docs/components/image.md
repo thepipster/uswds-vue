@@ -129,7 +129,6 @@ export default {
 | fluid-grow | boolean | false' | Make image responsive, but grow to maximum width |
 | rounded | boolean|string | false | Set rounded corners |
 | thumbnail | boolean | false | Appy styles for thumbnail (set a border) |
-| blank-color | string | 'rgba(50,50,50,0.1)' | Set the background color when the image is blank |
 | lazy | boolean | false | Lazy load image |
 
 
