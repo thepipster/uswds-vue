@@ -1,7 +1,7 @@
 # Card
 
 <div class="mt-3 mb-3" style="width: 18rem;">
-    <us-card title="This is the title" sub-title="Sub title" class="mb-2">This is a card with some content.</us-card>
+    <us-card title="This is the title" class="mb-2">This is a card with some content.</us-card>
 </div>
 
 ```vue

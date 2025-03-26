@@ -14,13 +14,14 @@
         all: unset;
     }    
 }
-*/
-.vp-page [vp-content] {
+    .vp-page [vp-content] {
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 2rem 2.5rem;
 }
 
+
+*/
 
 
 // Override the default content width
@@ -33,7 +34,6 @@
     margin-top: inherit;
 }
  
-@import "./reset.scss";
 
 //https://cdnjs.com/libraries/uswds
 @import "https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/css/uswds.min.css";

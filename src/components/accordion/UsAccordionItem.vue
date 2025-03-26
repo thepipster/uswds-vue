@@ -2,22 +2,22 @@
 
 <div class="usx-component accordion-item" v-if="divId">
     <h2 class="accordion-header" :id="`heading-${divId}`" >
-        <button 
-            type="button" 
-            class="accordion-button collapsed fw-bold" 
-            data-bs-toggle="collapse" 
-            :data-bs-target="`#collapse-${divId}`" 
-            :aria-expanded="expanded" 
+        <button
+            type="button"
+            class="accordion-button collapsed fw-bold"
+            data-bs-toggle="collapse"
+            :data-bs-target="`#collapse-${divId}`"
+            :aria-expanded="expanded"
             :aria-controls="`collapse-${divId}`">
             <slot name="heading">
                 {{heading}}
             </slot>
         </button>
     </h2>
-    <div :id="`collapse-${divId}`" 
-        class="accordion-collapse collapse" 
+    <div :id="`collapse-${divId}`"
+        class="accordion-collapse collapse"
         :class="{'show':expanded}"
-        :aria-labelledby="`heading${divId}`" 
+        :aria-labelledby="`heading${divId}`"
         :data-bs-parent="(!multiSelect) ? `#${parentDivId}` : false">
         <div class="accordion-body">
             <slot></slot>

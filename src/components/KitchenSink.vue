@@ -89,14 +89,7 @@
 </template>
 
 <style lang="scss">
-.usx-component {
-    &.usa-header {
-        //border-bottom: 1px solid #0b4778;
-        -webkit-box-shadow: 0 4px 6px -6px #222;
-        -moz-box-shadow: 0 4px 6px -6px #222;
-        box-shadow: 0 4px 6px -6px #222;
-    }
-}
+
 </style>
 <script setup lang="ts">
 import { ref } from 'vue';

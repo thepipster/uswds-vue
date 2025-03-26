@@ -1,5 +1,6 @@
 <template>
-<div class="usx-component usa-card" :class="classes"> <!-- tablet-lg:grid-col-6 widescreen:grid-col-4 -->
+
+<div class="usx-component usa-card" :class="classes">
 	<div class="usa-card__container">
 
 		<div class="usa-card__header">
@@ -27,15 +28,12 @@
 
 		<div class="usa-card__footer">
 			<slot name="footer">
-                <!-- <a href="#" class="usa-button">Visit Florida Keys</a> -->
+                <a href="#" class="usa-button">Visit Florida Keys</a>
             </slot>
 		</div>
 
 	</div>
 </div>
-
-
-
 
 
 	<!--
@@ -210,6 +208,7 @@ export default {
 </script>
 <style lang="scss">
 
+/*
 .usx-card {
 
     .usx-card-fluid-img {
@@ -225,6 +224,6 @@ export default {
         background: none;
     }
 }
-
+*/
 
 </style>
